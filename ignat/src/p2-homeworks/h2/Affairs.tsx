@@ -3,9 +3,10 @@ import Affair from './Affair'
 import {AffairType} from './HW2'
 
 type AffairsPropsType = { // need to fix any
-    data: any
-    setFilter: any
-    deleteAffairCallback: any
+    data: AffairType[]
+    // @ts-ignore
+    setFilter: (filter: FilterType) => void
+    deleteAffairCallback: (_id: number) => void
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -17,10 +18,12 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => {} // need to fix
-    const setHigh = () => {}
-    const setMiddle = () => {}
-    const setLow = () => {}
+    const setAll = () => {
+        props.setFilter('all')
+    } // need to fix
+    const setHigh = () => {props.setFilter('high')}
+    const setMiddle = () => {props.setFilter('middle')}
+    const setLow = () => {props.setFilter('low')}
 
     return (
         <div>
