@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 
 type ButtonType = {
-    // on: boolean
+    on: boolean,
     // title: string
 }
 
@@ -44,7 +44,7 @@ const Button = (props: ButtonType) => {
         <div>
             <div style={styleOn} onClick={() => setOn(true)}>On</div>
             <div style={styleOff} onClick={() => setOn(true)}>Off</div>
-            <div> </div>
+            <div></div>
         </div>
     )
 
