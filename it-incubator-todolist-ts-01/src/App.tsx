@@ -1,43 +1,45 @@
 import React, {useState} from 'react';
 import './App.css';
 import {TodoList} from "./Todolist";
+import {v1} from "uuid";
 
 
 function App() {
 
     let [tasks1, setTasks1] = useState([
         {
-            id: 1,
+            id: v1(),
             title: "HTMl",
             isDone: true
         },
         {
-            id: 2,
+            id: v1(),
             title: "css",
             isDone: false
         },
         {
-            id: 3,
+            id: v1(),
             title: "figma",
             isDone: true
         },
         {
-            id: 4,
+            id: v1(),
             title: "adobe",
             isDone: true
         },
         {
-            id: 5,
+            id: v1(),
             title: "paint",
             isDone: false
         }
     ])
+    let [clear, setClear ] = useState('')
 
-    let [filter, setFilter] = useState<'active'| 'completed' | 'all'>()
+    let [filter, setFilter] = useState<'active' | 'completed' | 'all'>()
 
 
 
-    function removeTask(id: number) {
+    function removeTask(id: string) {
         let tasks2 = tasks1.filter(el => el.id !== id)
         setTasks1(tasks2)
     }
@@ -50,15 +52,29 @@ function App() {
     if (filter === 'completed') {
         filteredTasks = tasks1.filter(el => el.isDone === true)
     }
-    function changeFilter(value: 'active'| 'completed' | 'all' )  {
+
+    function changeFilter(value: 'active' | 'completed' | 'all') {
         setFilter(value)
     }
+
+    function addTask(title: string) {
+        let newTask = {
+                id: v1(),
+                title: title,
+                isDone: false
+            }
+            let newTasks = [newTask,...tasks1]
+        setTasks1(newTasks)
+    }
+
     return (
         <div className="App">
             <TodoList titleMain={'What to learn'}
                       tasks={filteredTasks}
                       removeTask={removeTask}
-                      changeFilter={changeFilter} />
+                      changeFilter={changeFilter}
+                      addTask={addTask}
+            />
         </div>
     );
 }

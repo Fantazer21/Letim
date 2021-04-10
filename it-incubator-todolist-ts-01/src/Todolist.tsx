@@ -1,27 +1,36 @@
-import React from "react";
+import React, {useState} from "react";
 
 
 type PropsType = {
     titleMain: 'What to learn' | 'What to do' | 'What to buy'
     tasks: Array<TaskType>
-    removeTask: (id: number) => void
+    removeTask: (id: string) => void
     changeFilter: (value: 'active' | 'completed' | 'all') => void
+    addTask: (title: string) => void
+
 }
 
 
 type TaskType = {
-    id: number,
+    id: string,
     title: string,
     isDone: boolean
 }
 
 
 export function TodoList(props: PropsType) {
+
+    let [title, setTitle] = useState('')
+
     return (
         <div>
             <h3>{props.titleMain}</h3>
             <div>
-                <input/>
+                <input   value={title} onChange={e => setTitle(e.currentTarget.value)}/>
+                <button onClick={() => {
+                    props.addTask(title);
+                    setTitle('')
+                }} >+</button>
 
             </div>
             <ul>
