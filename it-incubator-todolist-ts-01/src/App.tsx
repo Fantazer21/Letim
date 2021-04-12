@@ -67,6 +67,14 @@ function App() {
         setTasks1(newTasks)
     }
 
+    function changeStatus(id: string, isDone: boolean) {
+        let task = tasks1.find(el => el.id === id)
+       if(task) {
+           task.isDone = isDone;
+           setTasks1([...tasks1])
+       }
+    }
+
     return (
         <div className="App">
             <TodoList titleMain={'What to learn'}
@@ -74,6 +82,8 @@ function App() {
                       removeTask={removeTask}
                       changeFilter={changeFilter}
                       addTask={addTask}
+                      changeTaskStatus={changeStatus}
+                      filter={filter}
             />
         </div>
     );
