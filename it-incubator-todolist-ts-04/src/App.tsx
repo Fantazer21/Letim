@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import {v1} from 'uuid';
+import {AddItemForm} from "./AddItemForm";
 
 export type FilterValuesType = "all" | "active" | "completed";
 
@@ -44,6 +45,7 @@ function App() {
 
     function addTask(title: string, todolistId: string) {
         let task = {id: v1(), title: title, isDone: false};
+
         let todolistTasks = tasks[todolistId]
         tasks[todolistId] = [task, ...todolistTasks]
         setTasks({...tasks});
@@ -67,18 +69,15 @@ function App() {
         }
         // setFilter(value);
     }
-
     return (
         <div className="App">
+            <AddItemForm  addItem={(title: string) => {alert(title)}}/>
             {
                 todoLists.map(tl => {
                     let allTodoListTasks = tasks[tl.id]
 
 
                     let tasksForTodolist = allTodoListTasks;
-
-
-
 
                     if (tl.filter === "active") {
                         tasksForTodolist = allTodoListTasks.filter(t => t.isDone === false);
