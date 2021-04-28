@@ -2,13 +2,14 @@ import React, {ChangeEvent, KeyboardEvent, useState} from "react";
 
 
 type PropsType = {
+    id: string
     titleMain: 'What to learn' | 'What to do' | 'What to buy'
     tasks: Array<TaskType>
     removeTask: (id: string) => void
-    changeFilter: (value: 'active' | 'completed' | 'all') => void
+    changeFilter: (value: 'active' | 'completed' | 'all', todolistID: string) => void
     addTask: (title: string) => void
     changeTaskStatus: (id: string, isDone: boolean) => void
-    filter: any
+    filter: 'active' | 'completed' | 'all'
 }
 
 
@@ -46,13 +47,13 @@ export function TodoList(props: PropsType) {
 
 
     const onAllClickHandler = () => {
-        props.changeFilter('all')
+        props.changeFilter('all',  props.id)
     }
     const onActiveClickHandler = () => {
-        props.changeFilter('active')
+        props.changeFilter('active', props.id)
     }
     const onCompletedClickHandler = () => {
-        props.changeFilter('completed')
+        props.changeFilter('completed', props.id)
     }
 
     return (
