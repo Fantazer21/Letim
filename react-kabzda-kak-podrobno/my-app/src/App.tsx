@@ -1,13 +1,26 @@
 import React from 'react';
+import Accordion from './components/accordion/Accordion';
+import Rating from './components/Rating/rating'
 
+
+type TypeAccordion = {
+    PageTitle: (title: string) => void
+}
 
 function App() {
-    debugger
+
     return (
         <div>
-            <AppTitle/>
-            <Rating/>
-            <Accordion/>
+
+
+            <PageTitle title={'This app component'}/>
+            <Accordion accordionTitle={'Header'}
+                       accordionTitleBody={'menu'}
+                       collapsed={false}/>
+            <Accordion accordionTitle={'Header2'}
+                       accordionTitleBody={'menu2'}
+                       collapsed={true}/>
+
         </div>
 
     )
@@ -17,41 +30,13 @@ function AccordionTitle() {
     return <h3>Menu</h3>
 }
 
-function AccordionBody() {
-    return <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
+
+type PageAccordion = {
+    title: string
 }
 
-function AppTitle() {
-    return <div>
-        This is app component
-    </div>
-}
-
-function Rating() {
-    debugger
-    return (
-        <div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-        </div>
-
-    )
-}
-
-function Accordion() {
-    return (
-        <div>
-            <AccordionTitle/>
-            <AccordionBody/>
-        </div>
-)
+function PageTitle(props: PageAccordion) {
+    return <div>{props.title} </div>
 }
 
 
