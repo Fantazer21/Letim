@@ -1,25 +1,25 @@
+function Rating(props: any) {
 
-
- function Rating(props: any) {
-    if (props.value === 0) {}
     return (
         <div>
-            <Star selected={true}/>
-            <Star selected={true}/>
-            <Star selected={true}/>
-            <Star selected={false}/>
-            <Star selected={false}/>
+            <Star selected={props.value} id={1}/>
+            <Star selected={props.value} id={2}/>
+            <Star selected={props.value} id={3}/>
+            <Star selected={props.value} id={4}/>
+            <Star selected={props.value} id={5}/>
         </div>
 
     )
 }
 
-function Star(props: any) {
-    if (props.selected === true) {
-        return <span><b>star </b></span>
-    } else {
-       return <span>star </span>
-    }
+type PropsTypeStar = {
+    selected: Number
+    id: Number
+}
+
+export function Star(props: PropsTypeStar) {
+    if (props.selected >= props.id) return <span><b>star </b></span>
+    return <span>star </span>
 }
 
 export default Rating
