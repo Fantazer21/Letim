@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Accordion from './components/accordion/Accordion';
-import Rating, { Star } from './components/Rating/rating'
+import Rating, {Star} from './components/Rating/rating'
 import OnOff from "./components/OnOff/OnOff";
 
 type TypeAccordion = {
@@ -8,39 +8,22 @@ type TypeAccordion = {
 }
 
 function App() {
+    let [collapsed, setCollapsed] = useState(true)
+    let [on,setOn]= useState(true)
 
     return (
         <div>
-
-
-            {/*<PageTitle title={'This app component'}/>*/}
-            {/*<Accordion accordionTitle={'Header'}*/}
-            {/*           accordionTitleBody={'menu'}*/}
-            {/*           collapsed={false}/>*/}
-            {/*<Accordion accordionTitle={'Header2'}*/}
-            {/*           accordionTitleBody={'menu2'}*/}
-            {/*           collapsed={true}/>*/}
-            <Rating value={4}/>
-            <OnOff/>
-
-
+            <OnOff onChange={ () => setOn(!on) } value={on} />
+            <Rating />
+            <Accordion nameMenu={'--Menu--'}
+                       collapsed={collapsed}
+                       onChange={ () => setCollapsed(!collapsed)}
+            />
         </div>
 
     )
 }
 
-function AccordionTitle() {
-    return <h3>Menu</h3>
-}
-
-
-type PageAccordion = {
-    title: string
-}
-
-function PageTitle(props: PageAccordion) {
-    return <div>{props.title} </div>
-}
 
 
 export default App;

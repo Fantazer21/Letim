@@ -1,12 +1,13 @@
-import React, {useState} from "react";
+import React, {useState,ChangeEvent,MouseEventHandler} from "react";
 
 type ValueType ={
-
+    onChange: (on: boolean) => void
+    value: boolean
 }
 
 function OnOff(props: ValueType) {
 
-    let [on,setOn]= useState(true)
+
 
     const main = {
         display: 'flex'
@@ -15,22 +16,22 @@ function OnOff(props: ValueType) {
     const onStyle= {
         width: '50px',
         height: '50px',
-        backgroundColor:  on ? 'red' : 'green',
+        backgroundColor:  props.value ? 'red' : 'green',
         marginRight: '20px'
     }
 
     const offStyle = {
         width: '50px',
         height: '50px',
-        backgroundColor: on ? 'green' : 'red',
+        backgroundColor: props.value ? 'green' : 'red',
         marginRight: '20px',
     }
 
 
     return (
         <div style={main}>
-            <div style={onStyle} onClick={() => setOn(false)}>ON</div>
-            <div style={offStyle} onClick={() => setOn(false)}>OFF</div>
+            <div style={onStyle} onClick={() => props.onChange(true)}>ON</div>
+            <div style={offStyle} onClick={() =>props.onChange(false)}>OFF</div>
         </div>
     )
 }
