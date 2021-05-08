@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import {Todolist} from "./ToDoList";
+import {stat} from "fs";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// const newState = state.map((el: StateType) => el.id === id ? ({...el, status: !el.status}) : ({...el}));
+export type StateType = {
+    id: number,
+    title: string,
+    status: boolean
 }
 
-export default App;
+
+function App() {
+
+    let [state, setState] = useState<StateType[]>([
+            {id: 1, title: 'Buy bread', status: false},
+            {id: 2, title: 'Buy milk', status: false},
+            {id: 3, title: 'Buy butter', status: false},
+        ]
+    )
+
+
+    function aaa(id: number, status: string) {
+
+        const newState = state.map( el =>  (el.id === id) ? ({...el, status: !status}) : ({...el}))
+
+
+
+        setState(newState)
+    }
+
+    return (
+        <Todolist
+            header={"Hello world"}
+            todo={state}
+            onToggle={aaa}
+        />
+    )
+}
+
+export default App
