@@ -1,4 +1,6 @@
-import React from 'react'
+// import React, from 'react'
+import {ChangeEvent,useState} from "react";
+
 type ManType = {
    name: string,
     age: number
@@ -14,14 +16,26 @@ let people: Array<ManType> = [
 
 function TestMap() {
 
+    let [value,setValue]= useState('')
+
     const newPeople = people.map(
         el => {
             return <div key={el.id}> {el.name} </div>
         }
     )
+
+    function showValue(e: ChangeEvent<HTMLInputElement>) {
+         setValue(e.currentTarget.value)
+        console.log(value)
+    }
+
+    function showValue2 () {
+        return console.log('dssdsdsd')
+    }
     return (
         <div>
             {newPeople}
+            <input onChange={showValue} onClick={showValue2}/>
         </div>
 
     )

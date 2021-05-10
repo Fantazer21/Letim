@@ -1,16 +1,15 @@
-import React, {ChangeEvent, KeyboardEvent, useState} from "react";
+import React, {ChangeEvent, useState, KeyboardEvent} from 'react';
 
-type AddItemFormPropsType = {
-    addItem: (title: string) => void
-}
-export const AddItemForm = (props: AddItemFormPropsType) => {
+function AddItemForm() {
+
+
     let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
 
     const addTask = () => {
         let newTitle = title.trim();
         if (newTitle !== "") {
-            props.addItem(newTitle);
+            props.addTask(newTitle, props.id);
             setTitle("");
         } else {
             setError("Title is required");
@@ -28,7 +27,11 @@ export const AddItemForm = (props: AddItemFormPropsType) => {
         }
     }
 
-    return (
+
+    return (<div>
+        <h3> {props.title}
+            <button onClick={removeTodolist}>x</button>
+        </h3>
         <div>
             <input value={title}
                    onChange={onChangeHandler}
@@ -37,7 +40,6 @@ export const AddItemForm = (props: AddItemFormPropsType) => {
             />
             <button onClick={addTask}>+</button>
             {error && <div className="error-message">{error}</div>}
-        </div>
-    )
+        </div>)
 
 }
