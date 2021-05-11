@@ -14,12 +14,6 @@ export function Header(props: HeaderType) {
                  (props.valueHeader == 0 && props.minValue == 0) ?
                  <span>Insert maximum and minimum Value</span> :
                 props.value
-
-
-
-
-
-
             }
         </div>
 
