@@ -1,34 +1,29 @@
-import {userReducer} from "./user-reducer";
+import {stateType, userReducer} from "./user-reducer";
 
-test('User reducer should increment ony age', () => {
-
-    const startState = {
-        age: 20, childrenCount: 0, name: 'Ilya',
-    }
+test('INCREMENT SHOULD BE CORRECT' , () => {
+    //data
+    const startState: stateType = { name: 'Ilya', age: 30, city: 'Sarajevo'}
+    //action
     const endState = userReducer(startState, {type: 'INCREMENT-AGE'})
-
-    expect(endState.age).toBe(21)
-    expect(endState.name).toBe('Ilya')
+    //result
+    expect(endState.age).toBe( 31)
 })
 
-test('User reducer should increment ony children count', () => {
-    const startState = {
-        age: 20, childrenCount: 0, name: 'Ilya',
-    }
-    const value = 2
-    const endState = userReducer(startState, {type: 'INCREMENT-CHILDREN-COUNT', value: value })
+test( 'CHANGE-CITY SHOULD BE CORRECT', () => {
+    //data
+    const startState: stateType = { name: 'Ilya', age: 30, city: 'Sarajevo'}
+    //action
+    const endState = userReducer(startState, {type: 'CHANGE-CITY' } )
 
-    expect(endState.childrenCount).toBe(2)
-    expect(endState.age).toBe(20)
+    //result
+    expect(endState.city).toBe('Toronto')
 })
 
-test('User reducer should change name', () => {
-    const startState = {
-        age: 20, childrenCount: 0, name: 'Ilya',
-    }
-    const newName= 'Sergey'
-    const endState = userReducer(startState, {type: 'CHANGE_NAME', newName: newName })
+test("CHANGE-NAME SHOULD BE CORRECT", () => {
+    let startState: stateType  =  { name: 'Ilya', age: 30, city: 'Sarajevo'}
 
-    expect(endState.name).toBe('Sergey')
-    expect(endState.age).toBe(20)
+    let endState = userReducer(startState, {type: 'CHANGE-NAME'})
+
+    expect(endState.name).toBe('Mike')
+    expect(endState.age).toBe(30)
 })

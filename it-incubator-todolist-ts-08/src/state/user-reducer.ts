@@ -1,34 +1,29 @@
-type StateType = {
-    age: number
-    childrenCount: number
-    name: string
+export type stateType = {
+    name: string,
+    age: number,
+    city: "Moscow" | 'Sarajevo' | 'Toronto'
 }
 
-type ActionType = {
-    type: string
-   [key: string] : any
+type actionType = {
+    type: 'INCREMENT-AGE' | 'CHANGE-CITY' | 'CHANGE-NAME'
 }
-
-
-export const userReducer = (state: StateType, action: ActionType): StateType => {
+export const userReducer = (state: stateType, action: actionType) => {
     switch (action.type) {
-
-        case 'INCREMENT-AGE' :
+        case 'INCREMENT-AGE':
             return {
                 ...state,
                 age: state.age + 1
             }
-        case 'INCREMENT-CHILDREN-COUNT' :
+        case 'CHANGE-CITY':
+            return {...state, city: 'Toronto'}
+        case 'CHANGE-NAME':
             return {
-                ...state,
-                childrenCount: action.value
-            }
-        case 'CHANGE_NAME' :
-            return {
-                ...state,
-                name: action.newName
-            }
+            ...state, name: 'Mike'
+        }
         default:
-            throw new Error("I dont understand")
+            throw new Error("Bla Bla BLa")
     }
+
+
 }
+
