@@ -20,39 +20,38 @@ type ChangeTodoListTitleAT = {
 type ChangeTodoListFilterAT = {
     type: 'CHANGE-TODOLIST-FILTER'
     id: string
-    filter: any
-    // title: string
-    // todolistID: string
+    filter: FilterValuesType
 }
 
 type ActionType = RemoveTodolistAT | AddToDoListAT | ChangeTodoListTitleAT | ChangeTodoListFilterAT
 
 export const todolistReducer = (todoLists: Array<TodolistType>, action: ActionType) => {
-    switch (action.type) {
-        case 'REMOVE-TODOLIST':
-            return todoLists.filter(tl => tl.id !== action.todoListID)
-
-        case 'ADD-TODOLIST':
-            let newTodolistId = v1();
-            let newTodolist: TodolistType = {id: newTodolistId, title: action.title, filter: 'all'};
-
-            return [...todoLists, newTodolist]
-
-        case 'CHANGE-TODOLIST-FILTER':
-
-            const todolist = todoLists.find(tl => tl.id === action.id)
-            if(todolist) {
-                todolist.filter = action.filter
+ switch (action.type) {
+     case 'REMOVE-TODOLIST' :
+            let newList = todoLists.filter(el => el.id !== action.todoListID)
+        return  newList
+     case 'ADD-TODOLIST':
+            let todoListID = v1()
+            let newToDoList: TodolistType = {
+                id: todoListID, title: action.title, filter: 'all'
             }
-            return [...todoLists]
+            return [...todoLists, newToDoList]
+     case 'CHANGE-TODOLIST-TITLE':
+         let todolistTitle = todoLists.find(tl => tl.id === action.todolistID);
+         if (todolistTitle) {
+             todolistTitle.title = action.title;
+         }
+         return [...todoLists]
+     case 'CHANGE-TODOLIST-FILTER':
+         let todolist = todoLists.find(tl => tl.id === action.id);
+         if (todolist) {
+             todolist.filter = action.filter;
 
-        case 'CHANGE-TODOLIST-TITLE':
-            let todolistTitle = todoLists.find(t => t.id === action.todolistID);
-            //изменим таску, если она нашлась
-            if (todolistTitle) {
-                todolistTitle.title = action.title;
-            }
-        default:
-            return todoLists
-    }
+         }
+         return[...todoLists]
+
+
+     default:
+          throw new Error('I dont understand type')
+ }
 }
