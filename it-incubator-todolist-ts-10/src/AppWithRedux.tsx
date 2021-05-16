@@ -7,6 +7,9 @@ import {AppBar, Button, Container, Grid, IconButton, Paper, Toolbar, Typography}
 import {Menu} from '@material-ui/icons';
 import {addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC, tasksReducer } from './state/tasks-reducer';
 import {addTodolistAC, changeTodolistFilterAC, changeTodolistTitleAC, removeTodolistAC, todolistsReducer } from './state/todolists-reducer';
+import {useDispatch, useSelector} from "react-redux";
+import {AppRootState} from "./state/store";
+import App from "./App";
 
 export type FilterValuesType = "all" | "active" | "completed" ;
 export type TodolistType = {
@@ -21,65 +24,54 @@ export type TasksStateType = {
 
 
 function AppWithRedux() {
-    let todolistId1 = v1();
-    let todolistId2 = v1();
+    const dispatch = useDispatch()
 
-    let [todolists, dispatchToTodoLists] = useReducer(todolistsReducer, [
-        {id: todolistId1, title: "What to learn", filter: "all"},
-        {id: todolistId2, title: "What to buy", filter: "all"}
-    ])
 
-    let [tasks, dispatchToSetTasks] = useReducer(tasksReducer, {
-        [todolistId1]: [
-            {id: v1(), title: "HTML&CSS", isDone: true},
-            {id: v1(), title: "JS", isDone: true}
-        ],
-        [todolistId2]: [
-            {id: v1(), title: "Milk", isDone: true},
-            {id: v1(), title: "React Book", isDone: true}
-        ]
-    });
+    const todolists = useSelector<AppRootState, Array<TodolistType>>(state => state.todolist)
+    const tasks = useSelector<AppRootState, TasksStateType>(state => state.tasks)
+
 
 
     function removeTask(id: string, todolistId: string) {
         const action = removeTaskAC(id, todolistId)
-        dispatchToSetTasks(action)
+        dispatch(action)
     }
 
     function addTask(title: string, todolistId: string) {
         let action = addTaskAC(title, todolistId)
-        dispatchToSetTasks(action)
+        dispatch(action)
     }
 
     function changeStatus(id: string, isDone: boolean, todolistId: string) {
         let action = changeTaskStatusAC(id, isDone ,todolistId)
-        dispatchToSetTasks(action)
+        dispatch(action)
         }
 
 
     function changeTaskTitle(id: string, newTitle: string, todolistId: string) {
         let action = changeTaskTitleAC(id, newTitle, todolistId)
-        dispatchToSetTasks(action)
+        dispatch(action)
     }
 
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
        let action123 = changeTodolistFilterAC(todolistId, value )
-        dispatchToTodoLists(action123)
+        dispatch(action123)
     }
 
     function removeTodolist(id: string) {
         let action = removeTodolistAC(id)
-        dispatchToTodoLists(action)
+        dispatch(action)
     }
 
     function changeTodolistTitle(id: string, title: string) {
         let action = changeTodolistTitleAC(id,title)
-        dispatchToTodoLists(action)
+        dispatch(action)
     }
 
     function addTodolist(title: string) {
         let action = addTodolistAC(title)
+        dispatch(action)
     }
 
     return (
