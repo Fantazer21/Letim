@@ -1,22 +1,36 @@
 import React from "react";
-import {ErrorTypes} from "./App";
+
 
 type HeaderType = {
-    valueHeader: number | ErrorTypes
+    mistakes: any
+    setTitle: Array<string>
+    startValue: number
     minValue: number
-    value: number
+    maxValue: number
 }
 
 export function Header(props: HeaderType) {
+    const textStyleMistake = {
+        color: 'red',
+        fontSize: '40px'
+    }
+    // props.setTitle[0]
+    const condition = () => {
+        if (props.mistakes) {
+            return <span style={textStyleMistake}>{props.setTitle[1]}</span>
+        }
+        if( (props.minValue === 0 && props.maxValue === 1) || props.startValue === 0) {
+            return <span>{props.setTitle[0]}</span>
+        }
+        if( props.minValue)
+            return <span>{ props.minValue}</span>
+
+
+    }
+
     return (
         <div>
-            {
-                 (props.valueHeader == 0 && props.minValue == 0) ?
-                 <span>Insert maximum and minimum Value</span> :
-                props.value
-            }
+            {condition( )  }
         </div>
-
-
     )
 }
