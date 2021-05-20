@@ -21,15 +21,15 @@ export function CounterSettings(props: TypeCounterSettings) {
     return (
         <div className='mainSettings'>
             <div className={'headerSettings'}>
-                <div>
-                    <span>Max value</span>
+                <div className={'headerSettingsElements'}>
+                    <span>MAX VALUE </span>
                     <input
                         type={'number'}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => props.setMaximumState(e.currentTarget.value)}
                         value={props.maxValue}/>
                 </div>
-                <div>
-                    <span>Start value</span> <input
+                <div className={'headerSettingsElements'}>
+                    <span>START VALUE </span><input
                     type={'number'}
                     onChange={(e: ChangeEvent<HTMLInputElement>) => props.setMinimumState(e.currentTarget.value)}
                     value={props.minValue}/>

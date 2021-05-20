@@ -39,9 +39,9 @@ export function CounterMain(props: CounterMainType) {
                 </div>
                 <div className='buttons'>
                     <button style={styleButtonDisabled}
-                            disabled={props.minValue === props.maxValue || props.minValue >= props.maxValue}
+                            disabled={props.minValue === props.maxValue || props.minValue >= props.maxValue || props.maxValue == props.value}
                             className='Inc'
-                            onClick={() => props.incValue(props.value)}>INC
+                            onClick={() => props.incValue(props.value)}> INC
                     </button>
                     <button className='Reset' onClick={() => props.resetValue(0)}>RESET</button>
                 </div>
