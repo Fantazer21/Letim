@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ed65823-05c1-4afd-a67e-65ae028b19fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Counter-main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Counter-main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Counter-settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Counter-settings.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Counter.css" afterDir="false" />
@@ -44,6 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,7 +88,8 @@
       <workItem from="1620898246518" duration="361000" />
       <workItem from="1621439816983" duration="8993000" />
       <workItem from="1621449725286" duration="4122000" />
-      <workItem from="1621492448902" duration="2457000" />
+      <workItem from="1621492448902" duration="2516000" />
+      <workItem from="1621526598293" duration="1368000" />
     </task>
     <servers />
   </component>

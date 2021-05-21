@@ -18,6 +18,7 @@ export function CounterSettings(props: TypeCounterSettings) {
         backgroundColor: props.conditionDisabled ? '#688c96' : ''
     }
 
+
     return (
         <div className='mainSettings'>
             <div className={'headerSettings'}>

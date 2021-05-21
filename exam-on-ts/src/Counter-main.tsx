@@ -18,11 +18,14 @@ export type CounterMainType = {
 export function CounterMain(props: CounterMainType) {
 
 
-    const styleButtonDisabled = {
-        backgroundColor: props.conditionDisabled ? '#688c96' : ''
-    }
+    // const styleButtonDisabled = {
+    //     backgroundColor: props.conditionDisabled ? '#688c96' : ''
+    // }
 
 
+    const disabledInc = props.minValue === props.maxValue
+        || props.minValue >= props.maxValue
+        || props.maxValue === props.value;
     return (
         <div>
             <div className='main'>
@@ -38,8 +41,9 @@ export function CounterMain(props: CounterMainType) {
                     </h1>
                 </div>
                 <div className='buttons'>
-                    <button style={styleButtonDisabled}
-                            disabled={props.minValue === props.maxValue || props.minValue >= props.maxValue || props.maxValue == props.value}
+                    <button
+                        // style={styleButtonDisabled}
+                            disabled={disabledInc}
                             className='Inc'
                             onClick={() => props.incValue(props.value)}> INC
                     </button>

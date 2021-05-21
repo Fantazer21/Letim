@@ -16,7 +16,12 @@ function App() {
 
     const titles = ['Insert maximum and minimum Value', 'Incorrect value']
 
-     const conditionDisabledMistake = (counter === maxState || counter > maxState || maxState <= minValue || minValue < 0 )
+     const conditionDisabledMistake = (
+         counter === maxState
+         || counter > maxState
+         || maxState <= minValue
+         || minValue < 0
+     )
 
     function setMinimumState(value: number) {
         let val = value

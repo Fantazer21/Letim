@@ -45,6 +45,9 @@
     font-family:  Fantasy, serif;
 
 }
+.Inc:disabled {
+    background-color: #688c96;
+}
 
 
 .Reset {
