@@ -1,4 +1,4 @@
-import { tasksReducer} from './tasks-reducer';
+import {addTaskAC, tasksReducer} from './tasks-reducer';
 import {TasksStateType} from '../App';
 
 test('Correct REMOVE_TASK', () => {
@@ -46,10 +46,10 @@ test('Correct ADD_TASK', () => {
         ]
     };
     const newTask = { id: "4", title: "Juice", isDone: false }
+    //const addTaskAC = {type:'ADD_TASK', todolistId: 'todolistId2', newTask: newTask}
 
 
-
-    const endState = tasksReducer(startState, {type:'ADD_TASK', todolistId: 'todolistId2', newTask: newTask,})
+    const endState = tasksReducer(startState,addTaskAC(newTask) )
 
     expect(endState["todolistId1"].length).toBe(3);
     expect(endState["todolistId2"].length).toBe(4);

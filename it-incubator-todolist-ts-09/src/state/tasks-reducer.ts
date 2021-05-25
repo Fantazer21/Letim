@@ -12,8 +12,7 @@ export type RemoveTaskActionType = {
 export type AddTaskActionType = {
     type: 'ADD_TASK'
     todolistId: string
-    newTask: {id: string, title: string, isDone: boolean}
-
+    newTask: { id: string, title: string, isDone: boolean }
 }
 
 export type ChangeTaskStatusActionType = {
@@ -31,7 +30,7 @@ export type ChangeTaskTitleActionType = {
     title: string
 }
 
-type ActionsType = RemoveTaskActionType | AddTaskActionType | ChangeTaskStatusActionType | ChangeTaskTitleActionType
+type ActionsType = RemoveTaskActionType | addTaskACType | ChangeTaskStatusActionType | ChangeTaskTitleActionType
 
 export const tasksReducer = (TasksState: TasksStateType, action: ActionsType): TasksStateType => {
     switch (action.type) {
@@ -41,32 +40,37 @@ export const tasksReducer = (TasksState: TasksStateType, action: ActionsType): T
             return copyState
 
         case 'ADD_TASK':
-            let newTasksTodolist = [ ...TasksState[action.todolistId], action.newTask]
+            let newTasksTodolist = [...TasksState[action.todolistId], action.newTask]
             return {
                 ...TasksState,
                 [action.todolistId]: newTasksTodolist
             }
 
         case 'CHANGE_TASK_STATUS':
-        let case2 = {...TasksState}
-    // найдём нужную таску:
-    let task = case2[action.todolistId].find(t => t.id === action.taskId);
-    //изменим таску, если она нашлась
-    if (task) {
-        task.isDone = action.isDone;
-        // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
+            let case2 = {...TasksState}
+            // найдём нужную таску:
+            let task = case2[action.todolistId].find(t => t.id === action.taskId);
+            //изменим таску, если она нашлась
+            if (task) {
+                task.isDone = action.isDone;
+                // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
 
-    }
-    return {...case2};
+            }
+            return {...case2};
 
-         case 'CHANGE_TASK_TITLE':
-             let case4 = {...TasksState}
-             let task4 = case4[action.todolistId].find(t => t.id === action.taskId);
-             if (task4) {
-                 task4.title = action.title;// засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-             }
-             return {...case4};
+        case 'CHANGE_TASK_TITLE':
+            let case4 = {...TasksState}
+            let task4 = case4[action.todolistId].find(t => t.id === action.taskId);
+            if (task4) {
+                task4.title = action.title;// засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
+            }
+            return {...case4};
         default:
             throw new Error('Bla Bla Bla')
     }
 }
+
+export const addTaskAC = (newTask: any): AddTaskActionType => (
+    {type: 'ADD_TASK', todolistId: 'todolistId2', newTask} as const)
+
+type addTaskACType = ReturnType<typeof addTaskAC>
