@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47b44cad-f052-45b2-9d33-835342c8be3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../exam-on-ts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam-on-ts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-08/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-08/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-09/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-09/src/state/tasks-reducer.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-09/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-09/src/state/tasks-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/AppWithReducers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/AppWithReducers.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/AppWithRedux.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/AppWithRedux.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/tasks-reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/tasks-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/todolists-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/todolists-reducer.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/todolists-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my-app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accordion/Accordion.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +38,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Select" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Letim\react-kabzda-kak-podrobno\my-app\src\components\Select" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -67,6 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1621351114115</updated>
       <workItem from="1621351116583" duration="1423000" />
+      <workItem from="1621961862503" duration="3267000" />
+      <workItem from="1622013569680" duration="621000" />
     </task>
     <servers />
   </component>
@@ -83,5 +91,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

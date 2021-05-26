@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
@@ -24,10 +24,8 @@ export type TasksStateType = {
 
 
 function AppWithRedux() {
-
     let todolistId1 = v1();
     let todolistId2 = v1();
-
 
     const todolists = useSelector<AppRootStateType, Array<TodolistType>>(state => state.todolists)
     const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
@@ -37,6 +35,7 @@ function AppWithRedux() {
 
     function removeTask(id: string, todolistId: string) {
         const action = removeTaskAC(id, todolistId)
+        dispatch(action)
     }
 
     function addTask(title: string, todolistId: string) {
@@ -45,13 +44,12 @@ function AppWithRedux() {
     }
 
     function changeStatus(id: string, isDone: boolean, todolistId: string) {
-        const action = changeTaskStatusAC(id, isDone, todolistId)
+        const action = changeTaskStatusAC(id,isDone,todolistId)
         dispatch(action)
-
     }
 
     function changeTaskTitle(id: string, newTitle: string, todolistId: string) {
-        const action = changeTaskTitleAC(id,newTitle,todolistId)
+        const action =changeTaskTitleAC(id,newTitle,todolistId)
         dispatch(action)
     }
 
@@ -73,7 +71,6 @@ function AppWithRedux() {
 
     function addTodolist(title: string) {
         const action = addTodolistAC(title)
-        dispatch(action)
         dispatch(action)
     }
 

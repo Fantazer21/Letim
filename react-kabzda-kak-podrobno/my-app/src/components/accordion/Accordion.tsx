@@ -5,41 +5,38 @@ type TypeAccordion = {
     nameMenu: string
     collapsed: boolean
     onChange: (collapsed: boolean) => void
+    list: Array<string>
 }
 
 
 function Accordion(props: TypeAccordion) {
+    return <div>
+        <AccordionTitle
+            nameMenu={props.nameMenu}
+            onChange={props.onChange}
+        />
+        {props.collapsed && <AccordionBody list={props.list}/>}
+    </div>
 
+}
 
+type TypeAccordionBody = {
+    list: Array<string>
+}
 
-
+function AccordionBody(props: TypeAccordionBody) {
     return (
-        <div>
-            <AccordionTitle
-                nameMenu={props.nameMenu}
-                onChange={props.onChange}
-                 />
-            {props.collapsed && <AccordionBody/>}
-        </div>
+        <ul>
+            {
+                props.list.map( (e,index) => <li key={index}>{index} {e}</li>)
+            }
+        </ul>
     )
 }
 
 
-
-function AccordionBody(props: any) {
-        return (
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        )
-}
-
-
-
 function AccordionTitle(props: any) {
-   return <h3 onClick={props.onChange}> {props.nameMenu} </h3>
+    return <h3 onClick={props.onChange}> {props.nameMenu} </h3>
 }
 
 export default Accordion
