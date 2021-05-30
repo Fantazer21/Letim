@@ -1,17 +1,21 @@
-import React, {useRef, useState} from 'react';
+import React, {ChangeEvent, ChangeEventHandler, useRef, useState} from 'react';
 
 
-type SelectType =  {
+type SelectType = {
     dataSelect: Array<string>
+    storage: any
 }
 
-function SelectCOMP(props: SelectType)  {
+function SelectCOMP(props: SelectType) {
+
+    // let [state, setState] = useState('')
+
     return (
-      <select>
-          {
-              props.dataSelect.map( (el, ind) => <option value={ind}>{el}</option>)
-          }
-      </select>
+        <select onChange={ (e:ChangeEvent<HTMLSelectElement>) => props.storage(e.currentTarget.value) }>
+            {
+                props.dataSelect.map((el, ind) => <option key={ind} value={ind}>{el}</option>)
+            }
+        </select>
     )
 }
 

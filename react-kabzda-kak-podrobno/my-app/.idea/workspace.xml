@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47b44cad-f052-45b2-9d33-835342c8be3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/AppWithReducers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/AppWithReducers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/AppWithRedux.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/AppWithRedux.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/tasks-reducer.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/tasks-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/todolists-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/todolists-reducer.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/src/state/todolists-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-10/yarn.lock" afterDir="false" />
+    <list default="true" id="e0005bf6-3bf2-4b21-a781-b61da5ecc487" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/select.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accordion/Accordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="2" />
-  </component>
-  <component name="ProjectId" id="1siMmD9LewQJIZSPp8UjnFTHiWX" />
+  <component name="ProjectId" id="1tCU6XNW9uRnbDU0SOhuRXAuljB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,15 +25,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Select" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Letim\react-kabzda-kak-podrobno\my-app\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Letim\react-kabzda-kak-podrobno\my-app\src\components\Select" />
+      <recent name="C:\Letim\react-kabzda-kak-podrobno\my-app\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -67,14 +57,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="47b44cad-f052-45b2-9d33-835342c8be3c" name="Default Changelist" comment="" />
-      <created>1621351114115</created>
+      <changelist id="e0005bf6-3bf2-4b21-a781-b61da5ecc487" name="Default Changelist" comment="" />
+      <created>1622272389464</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1621351114115</updated>
-      <workItem from="1621351116583" duration="1423000" />
-      <workItem from="1621961862503" duration="3267000" />
-      <workItem from="1622013569680" duration="621000" />
+      <updated>1622272389464</updated>
+      <workItem from="1622272391681" duration="7681000" />
+      <workItem from="1622369212288" duration="163000" />
     </task>
     <servers />
   </component>

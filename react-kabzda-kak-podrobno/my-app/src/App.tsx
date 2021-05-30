@@ -4,6 +4,7 @@ import Rating, {Star} from './components/Rating/rating'
 import OnOff from "./components/OnOff/OnOff";
 import Input from "./05_12";
 import SelectCOMP from './components/Select/Select';
+import s from './select.module.css'
 
 type TypeAccordion = {
     PageTitle: (title: string) => void
@@ -15,7 +16,20 @@ let dataSelect = ['MSC', 'KIEV', 'MINSK', 'TORONTO']
 
 function App() {
     let [collapsed, setCollapsed] = useState(true)
+
     let [on, setOn] = useState(true)
+
+    let [select, setSelect] = useState('')
+
+    function setValueSelect(value: string) {
+        setSelect(value)
+    }
+
+    function condition() {
+        if (+select === 1) return s.select
+    }
+
+
 
     return (
         <div>
@@ -28,7 +42,10 @@ function App() {
                 onChange={() => setCollapsed(!collapsed)}
             />
             <Input/>
-            <SelectCOMP dataSelect={dataSelect}/>
+            <SelectCOMP dataSelect={ dataSelect} storage={setValueSelect}/>
+            <h1  className={condition()}>{
+                dataSelect[+select]
+            }</h1>
         </div>
 
     )
