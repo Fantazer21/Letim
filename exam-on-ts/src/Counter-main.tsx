@@ -17,12 +17,6 @@ export type CounterMainType = {
 
 export function CounterMain(props: CounterMainType) {
 
-
-    // const styleButtonDisabled = {
-    //     backgroundColor: props.conditionDisabled ? '#688c96' : ''
-    // }
-
-
     const disabledInc = props.minValue === props.maxValue
         || props.minValue >= props.maxValue
         || props.maxValue === props.value;
