@@ -33,21 +33,18 @@ function App() {
     function setMaximumState(maxValue: number) {
         let temporaryMax = maxValue
         setMaxState(temporaryMax)
-         console.log(`This is maximum state ${maxValue}`)
     }
 
     function setMinimumValue(minValue: number) {
         let tempMinVal = minValue
 
         setCounter(tempMinVal)
-        console.log(`Minimal state ${counter} maximum value ${maxState}`)
     }
 
     function increaseValue(counter: number) {
         let newValue = +counter + 1
         if (counter < maxState)
             setCounter(newValue)
-        console.log(`counter ${counter}`)
     }
 
     function resetValue(val: number) {
