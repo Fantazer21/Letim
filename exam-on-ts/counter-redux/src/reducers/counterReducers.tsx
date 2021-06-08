@@ -4,7 +4,7 @@ type actionType = 'INC' | 'DEC'
 const initialState = {
     counter: 0
 }
-
+// test
 export const counterReducers = (state = initialState, action: any) => {
     switch (action) {
         case 'INC':
