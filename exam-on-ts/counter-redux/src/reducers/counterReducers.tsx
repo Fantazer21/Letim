@@ -1,5 +1,5 @@
 type actionType = 'INC' | 'DEC'
-
+fsdfsfsdfsfdfd
 
 const initialState = {
     counter: 0
