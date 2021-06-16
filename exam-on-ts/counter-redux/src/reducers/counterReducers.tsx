@@ -1,17 +1,20 @@
-type actionType = 'INC' | 'DEC'
-//test second part
-
 const initialState = {
-    counter: 0
+    counter: 220
 }
-// test
-export const counterReducers = (state = initialState, action: any) => {
-    switch (action) {
+
+type InitialStateType = typeof initialState
+
+export const counterReducers = (state: InitialStateType = initialState, action: any) => {
+    switch (action.type) {
         case 'INC':
-            return {counter: state.counter + 1}
+            return {...state, counter: state.counter + 1}
         case 'DEC':
-            return {counter: state.counter - 1}
+            return {...state, counter: state.counter - 1}
         default:
             return state
     }
 }
+
+export const incCreatorAC = () => ({type: 'INC'} as const)
+
+export const decCreatorAC = () => ({type: 'INC'} as const)
