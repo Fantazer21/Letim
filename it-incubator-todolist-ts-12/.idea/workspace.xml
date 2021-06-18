@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bc7b8a5-ad43-4114-8c61-49fb71788fee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stories/AddItemForm.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/EditableSpan.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Task.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="0bc7b8a5-ad43-4114-8c61-49fb71788fee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +56,7 @@
       <updated>1623855527564</updated>
       <workItem from="1623855529852" duration="4927000" />
       <workItem from="1623863838879" duration="1094000" />
+      <workItem from="1623913668056" duration="846000" />
     </task>
     <servers />
   </component>
