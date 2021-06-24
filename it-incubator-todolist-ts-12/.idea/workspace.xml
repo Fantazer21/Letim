@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bc7b8a5-ad43-4114-8c61-49fb71788fee" name="Default Changelist" comment="" />
+    <list default="true" id="da83ecb1-2d7d-4cac-91d5-ea8b2e0a6d1a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/it-incubator-todolist-ts-12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/it-incubator-todolist-ts-12.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1u2Ex5QQgC2X3ajK5TRpP6PkB4l" />
+  <component name="ProjectId" id="1uOwueDBugDOzlqpigsnNEH976t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,16 +23,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/stories" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Letim\it-incubator-todolist-ts-12\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Letim\it-incubator-todolist-ts-12\src\stories" />
-    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -49,30 +45,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0bc7b8a5-ad43-4114-8c61-49fb71788fee" name="Default Changelist" comment="" />
-      <created>1623855527564</created>
+      <changelist id="da83ecb1-2d7d-4cac-91d5-ea8b2e0a6d1a" name="Default Changelist" comment="" />
+      <created>1624550168193</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1623855527564</updated>
-      <workItem from="1623855529852" duration="4927000" />
-      <workItem from="1623863838879" duration="1094000" />
-      <workItem from="1623913668056" duration="846000" />
+      <updated>1624550168193</updated>
+      <workItem from="1624550170923" duration="90000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
