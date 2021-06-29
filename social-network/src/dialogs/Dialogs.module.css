@@ -1,9 +1,10 @@
 
 .dialogs {
   font-size: 40px;
-
 }
+
 .message {
   padding-top: 10px;
   padding-left: 10px;
+  background: red;
 }

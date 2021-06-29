@@ -4,6 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import Header from './header/header';
 import Dialogs from "./dialogs/dialogs";
 import Navbar from "./nav/nav";
+import Content from "./content/content";
 
 function App() {
     return (
@@ -11,8 +12,7 @@ function App() {
             <div className="app-wrapper">
                 <Header/>
                 <Navbar/>
-               <Dialogs/>
-
+                <Dialogs/>
             </div>
         </BrowserRouter>
 
