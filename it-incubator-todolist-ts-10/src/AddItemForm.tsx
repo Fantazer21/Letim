@@ -5,7 +5,7 @@ import {AddBox} from '@material-ui/icons';
 type AddItemFormPropsType = {
     addItem: (title: string) => void
 }
-// prepare for coding...test git
+
 export function AddItemForm(props: AddItemFormPropsType) {
 
     let [title, setTitle] = useState("")
