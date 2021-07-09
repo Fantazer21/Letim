@@ -2,9 +2,15 @@
 .dialogs {
   font-size: 40px;
 }
-
+.messages__names {
+  display: flex;
+  flex-direction: column;
+}
 .message {
   padding-top: 10px;
   padding-left: 10px;
   background: red;
+}
+.messages {
+  display: flex;
 }

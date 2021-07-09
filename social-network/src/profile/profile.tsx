@@ -1,11 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import s from './profile.module.css';
 
-let dataForHeader = {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png"
+type typePerson = {
+    title: string | undefined,
+    state: string | undefined
+}
+
+const Person = (props: typePerson) => {
+    return (
+        <div className={s.message_title}>
+            <div>  {props.title} </div>
+            <div>  {props.state} </div>
+        </div>
+    )
+}
+
+const Profile_photo = (props: any) => {
+    return (
+        <div>
+            <img className={s.Profile_photo} src={props.path}/>
+        </div>
+    )
 }
 
 let profileData = [
@@ -23,34 +38,43 @@ let profileData = [
     }
 ]
 
-let dialogsItemData = [
-    {id: 1, name: 'Ilya'},
-    {id: 2, name: 'DIma'},
-    {id: 3, name: 'Alex'},
-    {id: 4, name: 'Sasha'},
-    {id: 5, name: 'Masha'},
-    {id: 6, name: 'Dasha'},
-]
+export type profileType = {
+    profile: any
+}
 
-let messagesData = [
-    {message: 'Hello i am Ilya'},
-    {message: 'Hi i love it kamasutra'},
-    {message: 'What`s happened yesterday'},
-    {message: 'I am going to swim..'},
-]
+const Profile = (props: profileType) => {
+    return (
 
-ReactDOM.render(
-    <React.StrictMode>
-        <App dataHeader={dataForHeader.src}
-             dataProfile={profileData}
-             dialogsItemData={dialogsItemData}
-             messagesData={messagesData}
-        />
-    </React.StrictMode>,
-    document.getElementById('root')
-);
+        <div className={s.Profile_full}>
+            <div className={s.Profile_full_message}>
+                <div className={s.block_photo}>
+                    <Profile_photo
+                        path={props.profile[0].path}/>
+                </div>
+                <div>
+                    <Person
+                        title={props.profile[0].title}
+                        state={props.profile[0].state}/>
+                </div>
+            </div>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+            <div className={s.Profile_full_message}>
+                <div className={s.block_photo}>
+                    <Profile_photo
+                        path={props.profile[1].path}/>
+                </div>
+                <div>
+                    <Person
+                        title={props.profile[1].title}
+                        state={props.profile[1].state}/>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    )
+}
+export default Profile

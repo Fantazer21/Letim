@@ -6,13 +6,24 @@ import Dialogs from "./dialogs/dialogs";
 import Navbar from "./nav/nav";
 import Content from "./content/content";
 
-function App() {
+export type appType = {
+    dataHeader: string,
+    dataProfile: any,
+    dialogsItemData: any,
+    messagesData: any
+}
+
+
+function App(props: appType) {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
-                <Header/>
+                <Header src={props.dataHeader}/>
                 <Navbar/>
-                <Dialogs/>
+                <Content profile={props.dataProfile}
+                         dialogsItemData={props.dialogsItemData}
+                         messagesData={props.messagesData}
+                />
             </div>
         </BrowserRouter>
 

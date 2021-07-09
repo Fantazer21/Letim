@@ -1,22 +1,21 @@
 import React from 'react'
+import styles from './content.module.css'
+import {Route} from "react-router-dom";
+import Dialogs from "../dialogs/dialogs";
+import Profile from "../profile/profile";
 
-import styles from './Content.module.css'
-import {BrowserRouter, Route} from "react-router-dom";
+export type profileType = {
+    profile: any,
+    dialogsItemData: any,
+    messagesData: any
+}
 
-const Content = () => {
-    const User1 = [
-        {name: 'Ilya'},
-        {age: 30}
-    ]
-    const User2 = [
-        {name: 'Miki'},
-        {age: 40}
-    ]
+const Content = (props: profileType) => {
     return (
         <div className={styles.content}>
-            {/*<Route path='/messages' component={Messages}/>*/}
-            {/*<Route path='/News' component={News}/>*/}
-            {/*<Route path='/Music' component={Music}/>*/}
+            <Route path='/profile' render={() => <Profile profile={props.profile}/>}/>
+            <Route path='/dialogs' render={() => <Dialogs dialogsItemData={props.dialogsItemData}
+                                                          messagesData={props.messagesData}/>}/>
         </div>
 
     )
