@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {state} from './state/state';
 
 let dataForHeader = {
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png"
@@ -41,11 +42,7 @@ let messagesData = [
 
 ReactDOM.render(
     <React.StrictMode>
-        <App dataHeader={dataForHeader.src}
-             dataProfile={profileData}
-             dialogsItemData={dialogsItemData}
-             messagesData={messagesData}
-        />
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
 );

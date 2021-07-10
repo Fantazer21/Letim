@@ -5,24 +5,25 @@ import Header from './header/header';
 import Dialogs from "./dialogs/dialogs";
 import Navbar from "./nav/nav";
 import Content from "./content/content";
-
-export type appType = {
-    dataHeader: string,
-    dataProfile: any,
-    dialogsItemData: any,
-    messagesData: any
-}
+import {state} from './state/state';
+import {stat} from "fs";
 
 
-function App(props: appType) {
+let a = state.dataForHeader
+let b = state.profileData
+let c = state.dialogsItemData
+let d = state.messagesData
+
+
+const App = (props: any) => {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
-                <Header src={props.dataHeader}/>
+                <Header src={a}/>
                 <Navbar/>
-                <Content profile={props.dataProfile}
-                         dialogsItemData={props.dialogsItemData}
-                         messagesData={props.messagesData}
+                <Content profile={b}
+                         dialogsItemData={c}
+                         messagesData={d}
                 />
             </div>
         </BrowserRouter>
