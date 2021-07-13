@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom";
 type dialogsType = {
     dialogsItemData: Array<DialogItemType>,
     messagesData: Array<MessageType>,
+    addPost: Function
 }
 
 type DialogItemType = {
@@ -50,6 +51,8 @@ const Dialogs = (props: dialogsType) => {
 
     let mapMessageData = props.messagesData.map(el => <Message message={el.message}/>)
 
+    let sendMessage = React.createRef<HTMLTextAreaElement>()
+
     return (
         <div className={s.messages}>
             <div className={s.messages__names}>
@@ -58,6 +61,8 @@ const Dialogs = (props: dialogsType) => {
             <div className={s.messages__dialogs}>
                 {mapMessageData}
             </div>
+            <textarea ref={sendMessage} ></textarea>
+            <button onClick={() => props.addPost(sendMessage.current?.value) }></button>
         </div>
 
     )

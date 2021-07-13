@@ -1,3 +1,5 @@
+import {useCallback, useEffect, useMemo} from "react";
+import {rerenderEntireTree} from "../render";
 
 export type stateType = {
     dataForHeader: string,
@@ -22,7 +24,7 @@ type messagesDataType = {
     message: string
 }
 
-export const state = {
+export let state = {
     dataForHeader: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png",
     profileData: [
         {
@@ -52,6 +54,15 @@ export const state = {
         {message: 'What`s happened yesterday'},
         {message: 'I am going to swim..'},
     ],
+}
+
+ export let addPost = (postMessage: any) => {
+     let newPost = {
+    message: postMessage
+}
+state.messagesData.push(newPost)
+console.log(state.messagesData)
+     rerenderEntireTree(state)
 }
 
 

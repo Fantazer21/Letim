@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80b50236-39ce-4ee2-8661-f71aea7475e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/state/state.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/render.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dialogs/dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/dialogs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/state.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/state" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -36,6 +39,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Letim\social-network\src" />
       <recent name="C:\Letim\social-network\src\state" />
     </key>
   </component>
@@ -64,7 +68,9 @@
       <updated>1625754347307</updated>
       <workItem from="1625754348689" duration="3960000" />
       <workItem from="1625818389339" duration="7445000" />
-      <workItem from="1625889672362" duration="4200000" />
+      <workItem from="1625889672362" duration="4277000" />
+      <workItem from="1625993891003" duration="4668000" />
+      <workItem from="1626153913815" duration="6087000" />
     </task>
     <servers />
   </component>

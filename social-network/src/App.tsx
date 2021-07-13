@@ -2,12 +2,15 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter} from "react-router-dom";
 import Header from './header/header';
-import Dialogs from "./dialogs/dialogs";
 import Navbar from "./nav/nav";
 import Content from "./content/content";
 import {state} from './state/state';
-import {stat} from "fs";
 
+
+
+ type appType = {
+     addPost: Function
+ }
 
 let a = state.dataForHeader
 let b = state.profileData
@@ -15,7 +18,7 @@ let c = state.dialogsItemData
 let d = state.messagesData
 
 
-const App = (props: any) => {
+const App = (props: appType) => {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
@@ -24,6 +27,7 @@ const App = (props: any) => {
                 <Content profile={b}
                          dialogsItemData={c}
                          messagesData={d}
+                         addPost={props.addPost}
                 />
             </div>
         </BrowserRouter>

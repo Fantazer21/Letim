@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ChangeEvent, useState} from "react";
 import s from './profile.module.css';
 
 type typePerson = {
@@ -43,9 +43,24 @@ export type profileType = {
 }
 
 const Profile = (props: profileType) => {
+
+
+    let newPostElement = React.createRef<HTMLTextAreaElement>()
+
+    const addPost = () => {
+        console.log( newPostElement.current?.value)
+    }
+
     return (
+        
+        
 
         <div className={s.Profile_full}>
+
+                <textarea ref={newPostElement}></textarea>
+            <button onClick={addPost}></button>
+
+            
             <div className={s.Profile_full_message}>
                 <div className={s.block_photo}>
                     <Profile_photo

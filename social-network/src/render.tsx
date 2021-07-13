@@ -5,7 +5,7 @@ import App from './App';
 import {addPost, state, stateType} from './state/state';
 
 
-const rerenderEntireTree = (state: stateType) => {
+export let rerenderEntireTree = (state: stateType) => {
     ReactDOM.render(
         <React.StrictMode>
             <App addPost={addPost} />
@@ -13,4 +13,7 @@ const rerenderEntireTree = (state: stateType) => {
         document.getElementById('root')
     );
 }
-rerenderEntireTree(state)
+
+
+
+
