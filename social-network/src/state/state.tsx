@@ -5,7 +5,8 @@ export type stateType = {
     dataForHeader: string,
     profileData: Array<profileDataType>,
     dialogsItemData: Array<dialogsItemDataType>,
-    messagesData:Array<messagesDataType>
+    messagesData: Array<messagesDataType>
+    dispatch: (action: AppActionsType) => void
 }
 
 type profileDataType = {
@@ -23,6 +24,16 @@ type dialogsItemDataType = {
 type messagesDataType = {
     message: string
 }
+
+type AddPostActionType = {
+    type: "addPost",
+    postMessage: string
+}
+type DeletePostActionType = {
+    type: "deletePost"
+}
+export type AppActionsType = AddPostActionType | DeletePostActionType;
+
 
 export let state = {
     dataForHeader: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png",
@@ -50,19 +61,47 @@ export let state = {
     ],
     messagesData: [
         {message: 'Hello i am Ilya'},
-        {message: 'Hi i love it kamasutra'},
+        {message: 'Hi i love it-kamasutra'},
         {message: 'What`s happened yesterday'},
         {message: 'I am going to swim..'},
     ],
+    dispatch(action: AppActionsType) {
+        if (action.type === 'addPost') {
+            let newPost: any = {
+                message: action.postMessage
+            }
+            state.messagesData.push(newPost)
+
+            rerenderEntireTree(state)
+            console.log(state)
+        } else if (action.type === 'deletePost') {
+
+            state.messagesData.pop()
+
+            rerenderEntireTree(state)
+            console.log(state)
+        }
+    },
 }
 
- export let addPost = (postMessage: any) => {
-     let newPost = {
-    message: postMessage
-}
-state.messagesData.push(newPost)
-console.log(state.messagesData)
-     rerenderEntireTree(state)
-}
+//
+// export let addPost = (postMessage: any) => {
+//     let newPost = {
+//         message: postMessage
+//     }
+//
+//     state.messagesData.push(newPost)
+//
+//     rerenderEntireTree(state)
+//     console.log(state)
+// }
+//
+// export let deletePost = (postMessage: any) => {
+//
+//     state.messagesData.pop()
+//
+//     rerenderEntireTree(state)
+//     console.log(state)
+// }
 
 

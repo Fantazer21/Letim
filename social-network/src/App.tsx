@@ -4,12 +4,12 @@ import {BrowserRouter} from "react-router-dom";
 import Header from './header/header';
 import Navbar from "./nav/nav";
 import Content from "./content/content";
-import {state} from './state/state';
+import {AppActionsType, state} from './state/state';
 
 
 
  type appType = {
-     addPost: Function
+     dispatch: (action: AppActionsType) => void
  }
 
 let a = state.dataForHeader
@@ -27,7 +27,8 @@ const App = (props: appType) => {
                 <Content profile={b}
                          dialogsItemData={c}
                          messagesData={d}
-                         addPost={props.addPost}
+                         addPost={(postMessage: string) => props.dispatch({ type: "addPost", postMessage})}
+                         deletePost={() => props.dispatch({type: "deletePost"})}
                 />
             </div>
         </BrowserRouter>

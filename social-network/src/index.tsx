@@ -2,14 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {addPost, state, stateType} from './state/state';
+import {state, stateType} from './state/state';
+import {BrowserRouter} from "react-router-dom";
 
 
 const rerenderEntireTree = (state: stateType) => {
     ReactDOM.render(
-        <React.StrictMode>
-            <App addPost={addPost} />
-        </React.StrictMode>,
+        <BrowserRouter>
+            <App dispatch={state.dispatch.bind(state)}
+            />
+        </BrowserRouter>
+
+        ,
         document.getElementById('root')
     );
 }

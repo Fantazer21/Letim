@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80b50236-39ce-4ee2-8661-f71aea7475e5" name="Default Changelist" comment="">
+    <list default="true" id="e8df3147-b4cc-47d4-841b-7cf3d029dfba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dialogs/dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/dialogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/render.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/render.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/state.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1v2JefOhnpUNUsAVWnpk2DxPRag" />
+  <component name="ProjectId" id="1vO524nQBsTVX9LrAjhF5YEMLxc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,19 +29,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../it-incubator-todolist-ts-11" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="C:\Letim\social-network\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Letim\social-network\src" />
-      <recent name="C:\Letim\social-network\src\state" />
-    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -54,18 +54,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="80b50236-39ce-4ee2-8661-f71aea7475e5" name="Default Changelist" comment="" />
-      <created>1625754347307</created>
+      <changelist id="e8df3147-b4cc-47d4-841b-7cf3d029dfba" name="Default Changelist" comment="" />
+      <created>1626420084461</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1625754347307</updated>
-      <workItem from="1625754348689" duration="3960000" />
-      <workItem from="1625818389339" duration="7445000" />
-      <workItem from="1625889672362" duration="4277000" />
-      <workItem from="1625993891003" duration="4668000" />
-      <workItem from="1626153913815" duration="6087000" />
-      <workItem from="1626183851940" duration="616000" />
-      <workItem from="1626248104641" duration="152000" />
+      <updated>1626420084461</updated>
+      <workItem from="1626420087706" duration="2837000" />
+      <workItem from="1626423696203" duration="3024000" />
     </task>
     <servers />
   </component>

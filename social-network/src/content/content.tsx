@@ -8,7 +8,8 @@ export type profileType = {
     profile: any,
     dialogsItemData: any,
     messagesData: any,
-    addPost: Function
+    addPost: (postMessage: string) => void
+    deletePost: () => void
 }
 
 const Content = (props: profileType) => {
@@ -18,6 +19,7 @@ const Content = (props: profileType) => {
             <Route path='/dialogs' render={() => <Dialogs dialogsItemData={props.dialogsItemData}
                                                           messagesData={props.messagesData}
                                                           addPost={props.addPost}
+                                                          deletePost={props.deletePost}
             />}/>
         </div>
 

@@ -2,10 +2,11 @@ import React from "react";
 import s from './Dialogs.module.css'
 import {NavLink} from "react-router-dom";
 
-type dialogsType = {
+type DialogsType = {
     dialogsItemData: Array<DialogItemType>,
     messagesData: Array<MessageType>,
-    addPost: Function
+    addPost: (postMessage: string) => void
+    deletePost: () => void
 }
 
 type DialogItemType = {
@@ -18,7 +19,7 @@ type MessageType = {
 }
 
 
-const DialogItem = (props: any  ) => {
+const DialogItem = (props: any) => {
     return <NavLink to={'/dialogs/' + props.id}>{props.name}</NavLink>
 }
 
@@ -27,31 +28,12 @@ const Message = (props: any) => {
 }
 
 
-let dialogsItemData = [
-    {id: 1, name: 'Ilya'},
-    {id: 2, name: 'DIma'},
-    {id: 3, name: 'Alex'},
-    {id: 4, name: 'Sasha'},
-    {id: 5, name: 'Masha'},
-    {id: 6, name: 'Dasha'},
-]
-
-let messagesData= [
-    {message: 'Hello i am Ilya'},
-    {message: 'Hi i love it kamasutra'},
-    {message: 'What`s happened yesterday'},
-    {message: 'I am going to swim..'},
-]
-
-
-
-
-const Dialogs = (props: dialogsType) => {
-    let mapDialogItemData = props.dialogsItemData.map(el => <DialogItem id={el.id} name={el.name} />)
+const Dialogs = (props: DialogsType) => {
+    let mapDialogItemData = props.dialogsItemData.map(el => <DialogItem id={el.id} name={el.name}/>)
 
     let mapMessageData = props.messagesData.map(el => <Message message={el.message}/>)
 
-    let sendMessage = React.createRef<HTMLTextAreaElement>()
+    let sendMessageRef = React.createRef<HTMLTextAreaElement>()
 
     return (
         <div className={s.messages}>
@@ -61,8 +43,9 @@ const Dialogs = (props: dialogsType) => {
             <div className={s.messages__dialogs}>
                 {mapMessageData}
             </div>
-            <textarea ref={sendMessage} ></textarea>
-            <button onClick={() => props.addPost(sendMessage.current?.value) }></button>
+            <textarea ref={sendMessageRef}></textarea>
+            <button onClick={() => props.addPost(sendMessageRef.current?.value || '')}> addPost</button>
+            <button onClick={props.deletePost}>deletePost</button>
         </div>
 
     )
