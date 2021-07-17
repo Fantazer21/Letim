@@ -16,6 +16,7 @@ type DialogItemType = {
 
 type MessageType = {
     message: string
+
 }
 
 
@@ -29,9 +30,9 @@ const Message = (props: any) => {
 
 
 const Dialogs = (props: DialogsType) => {
-    let mapDialogItemData = props.dialogsItemData.map(el => <DialogItem id={el.id} name={el.name}/>)
+    let mapDialogItemData = props.dialogsItemData.map(el => <DialogItem  id={el.id} name={el.name}/>)
 
-    let mapMessageData = props.messagesData.map(el => <Message message={el.message}/>)
+    let mapMessageData = props.messagesData.map((el,num) => <Message  message={el.message}/>)
 
     let sendMessageRef = React.createRef<HTMLTextAreaElement>()
 

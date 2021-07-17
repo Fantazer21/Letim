@@ -1,8 +1,6 @@
 import React from "react";
 
 import styles from './Header.module.css'
-import {BrowserRouter} from "react-router-dom";
-import {stateType} from "../state/state";
 type typeHeader = {
     src: string,
 }

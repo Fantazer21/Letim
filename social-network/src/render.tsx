@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {state, stateType} from './state/state';
+import {stateType} from './state/state';
 
 
 export let rerenderEntireTree = (state: stateType) => {

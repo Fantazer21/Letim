@@ -8,14 +8,20 @@ export type profileType = {
     profile: any,
     dialogsItemData: any,
     messagesData: any,
-    addPost: (postMessage: string) => void
-    deletePost: () => void
+    addPost: (postMessage: string) => void,
+    deletePost: () => void,
+    addPostProfile: (state: string) => void,
+    deletePostProfile: () => void,
 }
 
 const Content = (props: profileType) => {
     return (
         <div className={styles.content}>
-            <Route path='/profile' render={() => <Profile profile={props.profile}/>}/>
+            <Route path='/profile' render={() => <Profile profile={props.profile}
+                                                          addPostProfile={props.addPostProfile}
+                                                          deletePostProfile={props.deletePostProfile}
+            />}/>
+
             <Route path='/dialogs' render={() => <Dialogs dialogsItemData={props.dialogsItemData}
                                                           messagesData={props.messagesData}
                                                           addPost={props.addPost}

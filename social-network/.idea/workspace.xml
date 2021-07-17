@@ -6,7 +6,8 @@
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/content.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dialogs/dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/dialogs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile/profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/profile.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/profile/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/render.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/render.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/state.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.tsx" afterDir="false" />
@@ -61,6 +62,8 @@
       <updated>1626420084461</updated>
       <workItem from="1626420087706" duration="2837000" />
       <workItem from="1626423696203" duration="3024000" />
+      <workItem from="1626443367616" duration="6600000" />
+      <workItem from="1626528912501" duration="5689000" />
     </task>
     <servers />
   </component>
