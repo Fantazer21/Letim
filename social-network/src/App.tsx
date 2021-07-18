@@ -4,7 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import Header from './header/header';
 import Navbar from "./nav/nav";
 import Content from "./content/content";
-import {addPostAC, AddPostProfileAC, AppActionsType, deletePostAC, DeletePostProfileAC, state} from './state/state';
+import {addPostAC, AddPostProfileAC, AppActionsType, deletePostAC, DeletePostProfileAC, state} from './redux/state';
 
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import s from './profile.module.css';
-import {profileDataType} from "../state/state";
+import {profileDataType} from "../redux/state";
 
 type typePerson = {
     title: string | undefined,
