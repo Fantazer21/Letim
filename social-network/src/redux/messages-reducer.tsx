@@ -1,17 +1,17 @@
-import { rerenderEntireTree } from "../render";
 import {AppActionsType, messagesDataType} from "./state";
 
 export const messagesReducer = (state: Array<messagesDataType>, action: AppActionsType) => {
-    if (action.type === 'addPost') {
-    let newPost: any = {
-        message: action.postMessage
+    switch (action.type) {
+        case 'addPost':
+            let newPost: any = {
+                message: action.postMessage
+            }
+            state.push(newPost)
+            return state
+        case "deletePost":
+            state.pop()
+            return state
+        default:
+            return state
     }
-    state.push(newPost)
-
-    console.log(state)
-} else if (action.type === 'deletePost') {
-    state.pop()
-    console.log(state)
-}
-    return state
 }
