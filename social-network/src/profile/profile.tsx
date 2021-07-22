@@ -1,6 +1,6 @@
 import React from "react";
 import s from './profile.module.css';
-import {profileDataType} from "../redux/state";
+import {PostDataType} from "../redux/state";
 
 type typePerson = {
     title: string | undefined,
@@ -26,13 +26,13 @@ const Profile_photo = (props: any) => {
 
 
 export type profileType = {
-    profile: any
+    posts: Array<PostDataType>
     addPostProfile: (state: string) => void,
     deletePostProfile: () => void,
 }
 
 
-const Profile_Full_Message = (props: profileDataType) => {
+const Profile_Full_Message = (props: PostDataType) => {
 
         return  <div className={s.Profile_full_message}>
             <div className={s.block_photo}>
@@ -51,7 +51,7 @@ const Profile_Full_Message = (props: profileDataType) => {
 
 const Profile = (props: profileType) => {
 
-    let profileMapList = props.profile.map( (el: any, ind: number) => <Profile_Full_Message  key={ind} id={ind} path={el.path} title={el.title} state={el.state}/>)
+    let profileMapList = props.posts.map( (el: any, ind: number) => <Profile_Full_Message  key={ind} id={ind} path={el.path} title={el.title} state={el.state}/>)
 
     let newPostElement = React.createRef<HTMLTextAreaElement>()
 

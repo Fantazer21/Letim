@@ -4,34 +4,30 @@ import {BrowserRouter} from "react-router-dom";
 import Header from './header/header';
 import Navbar from "./nav/nav";
 import Content from "./content/content";
-import {addPostAC, AddPostProfileAC, AppActionsType, deletePostAC, DeletePostProfileAC, state} from './redux/state';
+import {AppActionsType, AppDispatchType, AppStateType} from "./redux/redux-store";
+import {addPostAC, deletePostAC} from "./redux/state";
+import {AddPostProfileAC, DeletePostProfileAC} from "./redux/profile-reducer";
 
-
-
- type appType = {
-     dispatch: (action: AppActionsType) => void
-     // addPostAC: (type: 'addPost', postMessage: string) => void
+ type AppPropsType = {
+     dispatch: AppDispatchType
+     state: AppStateType
      // deletePostAC: (type: "deletePost") => void
  }
 
-let a = state.dataForHeader
-let b = state.profileData
-let c = state.dialogsItemData
-let d = state.messagesData
+// let a = state.dataForHeader
+// let b = state.profileData
+// let c = state.dialogsItemData
+// let d = state.messagesData
 
-
-
-
-const  App = (props: appType) => {
+const  App = (props: AppPropsType) => {
+    let state = props.state
     return (
         <BrowserRouter>
             <div className="app-wrapper">
-                <Header src={a}
+                <Header src={state.dataForHeader}
                 />
                 <Navbar/>
-                <Content profile={b}
-                         dialogsItemData={c}
-                         messagesData={d}
+                <Content state={state}
                          addPost={(postMessage: string) => props.dispatch(addPostAC(postMessage))}
                          deletePost={() => props.dispatch(deletePostAC())}
                          addPostProfile={(state: string) => props.dispatch(AddPostProfileAC(state))}
