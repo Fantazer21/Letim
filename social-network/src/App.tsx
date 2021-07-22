@@ -7,17 +7,13 @@ import Content from "./content/content";
 import {AppActionsType, AppDispatchType, AppStateType} from "./redux/redux-store";
 import {addPostAC, deletePostAC} from "./redux/state";
 import {AddPostProfileAC, DeletePostProfileAC} from "./redux/profile-reducer";
+import {AddMessageAC, DeleteMessageAC} from "./redux/messages-reducer";
 
  type AppPropsType = {
      dispatch: AppDispatchType
      state: AppStateType
-     // deletePostAC: (type: "deletePost") => void
  }
 
-// let a = state.dataForHeader
-// let b = state.profileData
-// let c = state.dialogsItemData
-// let d = state.messagesData
 
 const  App = (props: AppPropsType) => {
     let state = props.state
@@ -28,8 +24,8 @@ const  App = (props: AppPropsType) => {
                 />
                 <Navbar/>
                 <Content state={state}
-                         addPost={(postMessage: string) => props.dispatch(addPostAC(postMessage))}
-                         deletePost={() => props.dispatch(deletePostAC())}
+                         addPost={(postMessage: string) => props.dispatch(AddMessageAC(postMessage))}
+                         deletePost={() => props.dispatch(DeleteMessageAC())}
                          addPostProfile={(state: string) => props.dispatch(AddPostProfileAC(state))}
                          deletePostProfile = {()=> props.dispatch(DeletePostProfileAC())}
                 />

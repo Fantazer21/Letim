@@ -23,7 +23,7 @@ type MessagesStateType = {
     dialogsItemData: Array<any>
 }
 
-export const messagesReducer = (state= initialState, action: MessagesActionsType):MessagesStateType => {
+export const messagesReducer = (state = initialState, action: MessagesActionsType): MessagesStateType => {
     switch (action.type) {
         case 'ADD_MESSAGE':
             let newPost: MessageType = {
@@ -31,7 +31,7 @@ export const messagesReducer = (state= initialState, action: MessagesActionsType
             }
             return {
                 ...state,
-                messagesData: [...state.messagesData, newPost ]
+                messagesData: [...state.messagesData, newPost]
             }
         case "DELETE_MESSAGE":
             let copy2 = {...state}
@@ -42,14 +42,15 @@ export const messagesReducer = (state= initialState, action: MessagesActionsType
     }
 }
 
-type AddMessageAC = {type: "ADD_MESSAGE", postMessage: string}
-type DeleteMessageAC = {type: "DELETE_MESSAGE"}
+type AddMessageAC = { type: "ADD_MESSAGE", postMessage: string }
+
+type DeleteMessageAC = { type: "DELETE_MESSAGE" }
 export type MessagesActionsType = AddMessageAC | DeleteMessageAC
 
 
-export const addMessageAC = (postMessage: string): AddMessageAC => {
+export const AddMessageAC = (postMessage: string): AddMessageAC => {
     return {type: "ADD_MESSAGE", postMessage}
 }
-export const deleteMessageAC = (): DeleteMessageAC => {
+export const DeleteMessageAC = (): DeleteMessageAC => {
     return {type: "DELETE_MESSAGE"}
 }

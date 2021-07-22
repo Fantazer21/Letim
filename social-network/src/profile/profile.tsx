@@ -56,7 +56,8 @@ const Profile = (props: profileType) => {
     let newPostElement = React.createRef<HTMLTextAreaElement>()
 
     const addPost = () => {
-        console.log(newPostElement.current?.value)
+        let value = newPostElement.current?.value
+        return value
     }
 
     return (
