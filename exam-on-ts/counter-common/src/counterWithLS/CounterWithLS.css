@@ -1,0 +1,100 @@
+.main1 {
+    width: 400px;
+    height: 250px;
+    border: solid 4px #61dafb;
+    display: flex;
+    flex-direction: column;
+    position: center;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+
+.header1 {
+    border: solid 4px #61dafb;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+    color: #61dafb;
+    font-size: 10px;
+}
+
+.buttons1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border: solid 4px #61dafb;
+    width: 300px;
+    height: 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+
+}
+
+.Inc1 {
+    width: 100px;
+    height: 40px;
+    background-color:  #61dafb;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: #282c34;
+    font-size: 30px;
+    font-family:  Fantasy, serif;
+
+}
+.Inc:disabled {
+    background-color: #688c96;
+}
+
+
+.Reset1 {
+    width: 100px;
+    height: 40px;
+    background-color: #61dafb;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 30px;
+    font-family:  Fantasy, serif;
+}
+.Set1 {
+    width: 70px;
+    height: 40px;
+    background-color:  #61dafb;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: #282c34;
+    font-size: 30px;
+    font-family:  Fantasy, serif;
+
+}
+.headerSettings1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 90px;
+    border-radius: 10px;
+    text-align: center;
+    color: #61dafb
+}
+.headerSettingsElements1{
+    display: flex;
+    margin: 5px;
+    font-size: 9px;
+}
+
+.buttonsSettings {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border: solid 4px #61dafb;
+    width: 330px;
+    height: 70px;
+    margin-left: 30px;
+    border-radius: 10px;
+
+}

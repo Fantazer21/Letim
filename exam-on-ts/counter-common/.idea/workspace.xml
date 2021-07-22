@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8df3147-b4cc-47d4-841b-7cf3d029dfba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="35da1da4-ef4b-4f9e-9e92-934ace132593" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/state/tasks-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/state/todolists-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/state/todolists-reducer.test.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1vO524nQBsTVX9LrAjhF5YEMLxc" />
+  <component name="ProjectId" id="1tFegseKMfc99X5ry0SFmn0cUSr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,21 +25,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fantazer21/README.md" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Letim\social-network\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Letim\exam-on-ts\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Letim\social-network\src\profile" />
-      <recent name="C:\Letim\social-network\src\redux" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Letim\social-network\src\redux" />
+      <recent name="C:\Letim\exam-on-ts\src\counterWithLS" />
+      <recent name="C:\Letim\exam-on-ts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -57,19 +59,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e8df3147-b4cc-47d4-841b-7cf3d029dfba" name="Default Changelist" comment="" />
-      <created>1626420084461</created>
+      <changelist id="35da1da4-ef4b-4f9e-9e92-934ace132593" name="Default Changelist" comment="" />
+      <created>1622369379335</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1626420084461</updated>
-      <workItem from="1626420087706" duration="2837000" />
-      <workItem from="1626423696203" duration="3024000" />
-      <workItem from="1626443367616" duration="6600000" />
-      <workItem from="1626528912501" duration="6106000" />
-      <workItem from="1626611818792" duration="9923000" />
-      <workItem from="1626785251638" duration="593000" />
-      <workItem from="1626869663929" duration="791000" />
-      <workItem from="1626935620531" duration="14226000" />
+      <updated>1622369379335</updated>
+      <workItem from="1622369381655" duration="4073000" />
+      <workItem from="1622373497431" duration="7650000" />
+      <workItem from="1622514785121" duration="6335000" />
+      <workItem from="1622714002705" duration="4032000" />
     </task>
     <servers />
   </component>
