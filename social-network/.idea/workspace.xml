@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8df3147-b4cc-47d4-841b-7cf3d029dfba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/types.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,16 +30,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fantazer21/README.md" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="ts.external.directory.path" value="C:\Letim\social-network\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Letim\social-network\src" />
       <recent name="C:\Letim\social-network\src\profile" />
       <recent name="C:\Letim\social-network\src\redux" />
     </key>
@@ -69,7 +79,10 @@
       <workItem from="1626611818792" duration="9923000" />
       <workItem from="1626785251638" duration="593000" />
       <workItem from="1626869663929" duration="791000" />
-      <workItem from="1626935620531" duration="14226000" />
+      <workItem from="1626935620531" duration="15695000" />
+      <workItem from="1627030268837" duration="45000" />
+      <workItem from="1627030316727" duration="3187000" />
+      <workItem from="1627038250447" duration="1160000" />
     </task>
     <servers />
   </component>

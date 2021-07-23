@@ -1,4 +1,5 @@
-import {AppActionsType, PostDataType} from "./state";
+
+import { ProfileStateType} from "../types";
 
 let initialState: ProfileStateType = {
     posts: [
@@ -17,9 +18,7 @@ let initialState: ProfileStateType = {
     ]
 }
 
-type ProfileStateType = {
-    posts: Array<PostDataType>
-}
+
 
 export const profileReducer = (state = initialState, action: ProfileActionsType): ProfileStateType  => {
     switch (action.type) {

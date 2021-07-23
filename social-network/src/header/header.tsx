@@ -1,9 +1,8 @@
 import React from "react";
+import { typeHeader } from "../types";
 
 import styles from './Header.module.css'
-type typeHeader = {
-    src: string,
-}
+
 
 const Header = (props: typeHeader) => {
     return (

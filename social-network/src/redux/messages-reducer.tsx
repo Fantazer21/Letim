@@ -1,3 +1,4 @@
+import {MessagesStateType} from "../types";
 import {AppActionsType, MessageType} from "./state";
 
 
@@ -18,10 +19,6 @@ let initialState: MessagesStateType = {
     ],
 }
 
-type MessagesStateType = {
-    messagesData: Array<MessageType>
-    dialogsItemData: Array<any>
-}
 
 export const messagesReducer = (state = initialState, action: MessagesActionsType): MessagesStateType => {
     switch (action.type) {

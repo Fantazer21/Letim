@@ -3,17 +3,10 @@ import styles from './content.module.css'
 import {Route} from "react-router-dom";
 import Dialogs from "../dialogs/dialogs";
 import Profile from "../profile/profile";
-import {AppStateType} from "../redux/redux-store";
+import {contentType} from '../types';
 
-export type profileType = {
-    state: AppStateType
-    addPost: (postMessage: string) => void,
-    deletePost: () => void,
-    addPostProfile: (state: string) => void,
-    deletePostProfile: () => void,
-}
 
-const Content = (props: profileType) => {
+const Content = (props: contentType) => {
     return (
         <div className={styles.content}>
             <Route path='/profile' render={() => <Profile posts={props.state.profilePage.posts}

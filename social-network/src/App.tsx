@@ -8,14 +8,10 @@ import {AppActionsType, AppDispatchType, AppStateType} from "./redux/redux-store
 import {addPostAC, deletePostAC} from "./redux/state";
 import {AddPostProfileAC, DeletePostProfileAC} from "./redux/profile-reducer";
 import {AddMessageAC, DeleteMessageAC} from "./redux/messages-reducer";
-
- type AppPropsType = {
-     dispatch: AppDispatchType
-     state: AppStateType
- }
+import {AppPropsType} from './types';
 
 
-const  App = (props: AppPropsType) => {
+const App = (props: AppPropsType) => {
     let state = props.state
     return (
         <BrowserRouter>
@@ -23,11 +19,12 @@ const  App = (props: AppPropsType) => {
                 <Header src={state.dataForHeader}
                 />
                 <Navbar/>
-                <Content state={state}
-                         addPost={(postMessage: string) => props.dispatch(AddMessageAC(postMessage))}
-                         deletePost={() => props.dispatch(DeleteMessageAC())}
-                         addPostProfile={(state: string) => props.dispatch(AddPostProfileAC(state))}
-                         deletePostProfile = {()=> props.dispatch(DeletePostProfileAC())}
+                <Content
+                    state={state}
+                    addPost={(postMessage: string) => props.dispatch(AddMessageAC(postMessage))}
+                    deletePost={() => props.dispatch(DeleteMessageAC())}
+                    addPostProfile={(state: string) => props.dispatch(AddPostProfileAC(state))}
+                    deletePostProfile={() => props.dispatch(DeletePostProfileAC())}
                 />
             </div>
         </BrowserRouter>
