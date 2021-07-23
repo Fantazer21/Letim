@@ -24,13 +24,19 @@
  // profile types
  export type contentType = {
      state: AppStateType
-     addPost: (postMessage: string) => void,
-     deletePost: () => void,
-     addPostProfile: (state: string) => void,
-     deletePostProfile: () => void,
+     dispatch: AppDispatchType
  }
  export type ProfileStateType = {
      posts: Array<PostDataType>
+ }
+
+ export type ProfileContainerType ={
+     dispatch: AppDispatchType
+     state: AppStateType
+ }
+ export type DialogsContainerType ={
+     dispatch: AppDispatchType
+     state: AppStateType
  }
 
  export type AppPropsType = {

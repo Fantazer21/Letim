@@ -1,5 +1,5 @@
 import {MessagesStateType} from "../types";
-import {AppActionsType, MessageType} from "./state";
+import { MessageType} from "./state";
 
 
 let initialState: MessagesStateType = {
@@ -39,15 +39,16 @@ export const messagesReducer = (state = initialState, action: MessagesActionsTyp
     }
 }
 
-type AddMessageAC = { type: "ADD_MESSAGE", postMessage: string }
+type AddMessageACtype = { type: "ADD_MESSAGE", postMessage: string }
 
-type DeleteMessageAC = { type: "DELETE_MESSAGE" }
-export type MessagesActionsType = AddMessageAC | DeleteMessageAC
+type DeleteMessageACtype = { type: "DELETE_MESSAGE" }
+
+export type MessagesActionsType = AddMessageACtype | DeleteMessageACtype
 
 
-export const AddMessageAC = (postMessage: string): AddMessageAC => {
+export const AddMessageAC = (postMessage: string): AddMessageACtype => {
     return {type: "ADD_MESSAGE", postMessage}
 }
-export const DeleteMessageAC = (): DeleteMessageAC => {
+export const DeleteMessageAC = (): DeleteMessageACtype => {
     return {type: "DELETE_MESSAGE"}
 }

@@ -5,16 +5,12 @@ import {PostDataType, profileType, typePerson} from "../types";
 
 const Profile = (props: profileType) => {
 
-    let profileMapList = props.posts.map((el: any, ind: number) => <Profile_Full_Message key={ind} id={ind}
+    let profileMapList = props.posts.map((el: any, ind: number) => <ProfileFullMessage key={ind} id={ind}
                                                                                          path={el.path} title={el.title}
                                                                                          state={el.state}/>)
 
     let newPostElement = React.createRef<HTMLTextAreaElement>()
 
-    const addPost = () => {
-        let value = newPostElement.current?.value
-        return value
-    }
 
     return (
         <div className={s.Profile_full}>
@@ -37,7 +33,7 @@ const Person = (props: typePerson) => {
     )
 }
 
-const Profile_photo = (props: any) => {
+const ProfilePhoto = (props: any) => {
     return (
         <div>
             <img className={s.Profile__img} src={props.path} alt={'Profile photo'}/>
@@ -46,11 +42,11 @@ const Profile_photo = (props: any) => {
 }
 
 
-const Profile_Full_Message = (props: PostDataType) => {
+const ProfileFullMessage = (props: PostDataType) => {
 
     return <div className={s.Profile_full_message}>
         <div className={s.block_photo}>
-            <Profile_photo
+            <ProfilePhoto
                 path={props.path}/>
         </div>
         <div>

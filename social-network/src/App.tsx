@@ -4,15 +4,12 @@ import {BrowserRouter} from "react-router-dom";
 import Header from './header/header';
 import Navbar from "./nav/nav";
 import Content from "./content/content";
-import {AppActionsType, AppDispatchType, AppStateType} from "./redux/redux-store";
-import {addPostAC, deletePostAC} from "./redux/state";
-import {AddPostProfileAC, DeletePostProfileAC} from "./redux/profile-reducer";
-import {AddMessageAC, DeleteMessageAC} from "./redux/messages-reducer";
 import {AppPropsType} from './types';
 
 
 const App = (props: AppPropsType) => {
     let state = props.state
+    let dispatch = props.dispatch
     return (
         <BrowserRouter>
             <div className="app-wrapper">
@@ -21,10 +18,7 @@ const App = (props: AppPropsType) => {
                 <Navbar/>
                 <Content
                     state={state}
-                    addPost={(postMessage: string) => props.dispatch(AddMessageAC(postMessage))}
-                    deletePost={() => props.dispatch(DeleteMessageAC())}
-                    addPostProfile={(state: string) => props.dispatch(AddPostProfileAC(state))}
-                    deletePostProfile={() => props.dispatch(DeletePostProfileAC())}
+                    dispatch={dispatch}
                 />
             </div>
         </BrowserRouter>

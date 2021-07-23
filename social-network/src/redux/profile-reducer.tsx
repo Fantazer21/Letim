@@ -40,16 +40,16 @@ export const profileReducer = (state = initialState, action: ProfileActionsType)
     }
 }
 
-type AddPostProfileAC = {type: 'AddPostProfile', state: string}
+type AddPostProfileACtype = {type: 'AddPostProfile', state: string}
 
-type DeletePostProfileAC= {type: 'DeletePostProfile'}
+type DeletePostProfileACtype= {type: 'DeletePostProfile'}
 
-export type ProfileActionsType = AddPostProfileAC | DeletePostProfileAC
+export type ProfileActionsType = AddPostProfileACtype | DeletePostProfileACtype
 
-export const AddPostProfileAC = (state: string): AddPostProfileAC => {
+export const AddPostProfileAC = (state: string): AddPostProfileACtype => {
     return {type: 'AddPostProfile', state: state}
 }
 
-export const DeletePostProfileAC = (): DeletePostProfileAC => {
+export const DeletePostProfileAC = (): DeletePostProfileACtype => {
     return {type: 'DeletePostProfile'}
 }
