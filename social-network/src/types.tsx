@@ -2,7 +2,7 @@
  // App types
 
  import { AppDispatchType, AppStateType } from "./redux/redux-store"
- import {MessageType} from "./redux/state";
+
 
  export type profileType = {
      posts: Array<PostDataType>
@@ -52,4 +52,7 @@
  export type MessagesStateType = {
      messagesData: Array<MessageType>
      dialogsItemData: Array<any>
+ }
+export type MessageType = {
+     message: string
  }

@@ -1,5 +1,6 @@
-import {MessagesStateType} from "../types";
-import { MessageType} from "./state";
+import {MessagesStateType, MessageType} from "../types";
+
+
 
 
 let initialState: MessagesStateType = {
