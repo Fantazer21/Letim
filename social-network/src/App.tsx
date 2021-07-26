@@ -4,21 +4,25 @@ import {BrowserRouter} from "react-router-dom";
 import Header from './header/header';
 import Navbar from "./nav/nav";
 import Content from "./content/content";
-import {AppPropsType} from './types';
+import {AppDispatchType, AppStateType} from "./redux/redux-store";
+
+
+type AppPropsType = {
+    dispatch: AppDispatchType
+    state: AppStateType
+}
 
 
 const App = (props: AppPropsType) => {
-    let state = props.state
-    let dispatch = props.dispatch
     return (
         <BrowserRouter>
             <div className="app-wrapper">
-                <Header src={state.dataForHeader}
+                <Header src={props.state.dataForHeader}
                 />
                 <Navbar/>
                 <Content
-                    state={state}
-                    dispatch={dispatch}
+                    state={props.state}
+                    dispatch={props.dispatch}
                 />
             </div>
         </BrowserRouter>

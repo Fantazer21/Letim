@@ -1,8 +1,6 @@
 import {MessagesStateType, MessageType} from "../types";
 
 
-
-
 let initialState: MessagesStateType = {
     messagesData: [
         {message: 'Hello i am Ilya'},
