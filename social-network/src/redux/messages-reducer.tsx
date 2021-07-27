@@ -1,5 +1,5 @@
 import {MessagesStateType, MessageType} from "../types";
-
+ ///
 
 let initialState: MessagesStateType = {
     messagesData: [
@@ -30,9 +30,12 @@ export const messagesReducer = (state = initialState, action: MessagesActionsTyp
                 messagesData: [...state.messagesData, newPost]
             }
         case "DELETE_MESSAGE":
-            let copy2 = {...state}
-            copy2.messagesData.pop()
-            return copy2;
+            let copy2 = [...state.messagesData]
+            copy2.pop()
+            return {
+                ...state,
+                messagesData: copy2
+            }
         default:
             return state
     }
