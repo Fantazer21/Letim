@@ -21,7 +21,6 @@ let initialState: ProfileStateType = {
 
 
 export const profileReducer = (state = initialState, action: ProfileActionsType): ProfileStateType  => {
-    let statePosts = [...state.posts]
 
     switch (action.type) {
         case "AddPostProfile":

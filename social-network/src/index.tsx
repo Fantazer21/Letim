@@ -13,7 +13,7 @@ let rerenderEntireTree = (state: AppStateType) => {
             <Provider store={store}>
                 <App
                     dispatch={store.dispatch.bind(store)}
-                     state={store.getState()}
+                    state={store.getState()}
                 />
             </Provider>
         </BrowserRouter>,

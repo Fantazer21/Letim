@@ -16,8 +16,8 @@ export const Navbar = () => {
                 </NavLink>
             </div>
             <div className={s.item}>
-                <NavLink to="/News" activeClassName={s.active}>
-                    News
+                <NavLink to="/Users" activeClassName={s.active}>
+                    Users
                 </NavLink>
             </div>
             <div className={s.item}>

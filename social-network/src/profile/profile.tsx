@@ -36,7 +36,7 @@ const Person = (props: typePerson) => {
 const ProfilePhoto = (props: any) => {
     return (
         <div>
-            <img className={s.Profile__img} src={props.path} alt={'Profile photo'}/>
+            <img className={s.Profile__img} src={props.path} alt={'ProfilePh'}/>
         </div>
     )
 }
