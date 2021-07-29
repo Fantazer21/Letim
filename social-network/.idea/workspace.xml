@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b2d2a38-b028-4e9c-970c-7b36c82c7020" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/users/users-container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/users.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users/users.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dialogs/dialogsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialogs/dialogsContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav/nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav/nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profile/profile-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/profile-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profile/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/users-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +67,7 @@
       <workItem from="1627284783479" duration="9778000" />
       <workItem from="1627457959942" duration="85000" />
       <workItem from="1627458135064" duration="16836000" />
+      <workItem from="1627544722364" duration="5389000" />
     </task>
     <servers />
   </component>
