@@ -4,15 +4,15 @@ import {UsersStateType, UserType} from "../redux/users-reducer";
 
 type UsersPropsType = {
     users: Array<UserType>
-    UsersFollow: () => void
-    UsersUnFollow: () => void
+    UsersFollow: (userId: number) => void
+    UsersUnFollow: (userId: number) => void
 }
 
 export const Users = (props: UsersPropsType) => {
 
     let usersMap = props.users.map( (el, ind) => {
         return <div className={s.Users}>
-            <PhotoButton button={el.button } key={ind+10} id={el.id} followed ={el.followed}/>
+            <PhotoButton  key={ind+10} id={el.id} followed ={el.followed}/>
             <UsersArea id={el.id}
                        key={ind +100}
                        name={el.name}
@@ -36,13 +36,16 @@ const PhotoButton = (props: PhotoButtonType) => {
         <div>
             <img className={s.UsersMainPh} src={a}  alt={'ProfilePh'}/>
         </div>
-        <button className={s.UsersButton} onClick={() => console.log(props.id)}>{props.button}</button>
+        {props.followed ?
+            <button className={s.UsersButton} onClick={() => props.followed }>subscribe</button> :
+            <button className={s.UsersButton} onClick={() => props.followed }>unsubscribe</button>
+        }
+
     </div>
 }
 type PhotoButtonType ={
     id: number
     followed: boolean
-    button: "subscribe" | 'unsubscribe'
 }
 
 type UsersAreaType ={
