@@ -4,7 +4,6 @@
     <list default="true" id="3b2d2a38-b028-4e9c-970c-7b36c82c7020" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/users-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users.tsx" afterDir="false" />
     </list>
@@ -67,7 +66,7 @@
       <workItem from="1627284783479" duration="9778000" />
       <workItem from="1627457959942" duration="85000" />
       <workItem from="1627458135064" duration="16836000" />
-      <workItem from="1627544722364" duration="9918000" />
+      <workItem from="1627544722364" duration="12551000" />
     </task>
     <servers />
   </component>
