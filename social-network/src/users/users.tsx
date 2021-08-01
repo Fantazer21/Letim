@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./users.module.css"
 import {UsersStateType, UserType} from "../redux/users-reducer";
+import  axios from "axios";
 
 type UsersPropsType = {
     users: Array<UserType>
@@ -10,8 +11,16 @@ type UsersPropsType = {
 }
 
 export const Users = (props: UsersPropsType) => {
+
+
+
     if (props.users.length === 0) {
-        props.setUsers(props.users)
+        debugger
+        axios.get<{items: Array<UserType>}>('https://social-network.samuraijs.com/api/1.0/users').then(response => {
+            console.log(response.data.items)
+            props.setUsers(props.users)
+        })
+
     }
 
     let usersMap = props.users.map((el, ind) => {

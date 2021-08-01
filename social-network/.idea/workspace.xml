@@ -4,8 +4,10 @@
     <list default="true" id="3b2d2a38-b028-4e9c-970c-7b36c82c7020" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/users-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
       <workItem from="1627284783479" duration="9778000" />
       <workItem from="1627457959942" duration="85000" />
       <workItem from="1627458135064" duration="16836000" />
-      <workItem from="1627544722364" duration="12551000" />
+      <workItem from="1627544722364" duration="18380000" />
     </task>
     <servers />
   </component>
