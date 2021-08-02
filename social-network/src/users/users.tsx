@@ -22,7 +22,7 @@ export const Users = (props: UsersPropsType) => {
         })
 
     }
-
+//update
     let usersMap = props.users.map((el, ind) => {
             return <div className={s.Users}>
                 <PhotoButton key={ind + 10} id={el.id} followed={el.followed} usersFollow={props.usersFollow}
