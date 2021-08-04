@@ -11,14 +11,9 @@ type UsersPropsType = {
 }
 
 export const Users = (props: UsersPropsType) => {
-
-
-
     if (props.users.length === 0) {
-        debugger //class component
         axios.get<{items: Array<UserType>}>('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-            console.log(response.data.items)
-            props.setUsers(props.users)
+            props.setUsers(response.data.items)
         })
 
     }
@@ -70,7 +65,7 @@ type UsersAreaType = {
     name: string
     message: string
     country: string
-    city: "Moscow" | 'Minsk' | "Budapest"
+    city: string
 }
 
 const UsersArea = (props: UsersAreaType) => {

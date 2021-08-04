@@ -2,6 +2,7 @@ import {connect} from "react-redux";
 import {Users} from "./users";
 import {AppDispatchType, AppStateType} from "../redux/redux-store";
 import {setUsersAC, usersFollowAC, usersUnFollowAC, UserType} from "../redux/users-reducer";
+import axios from "axios";
 
 
 let mapStateToProps = (state: AppStateType) => {
