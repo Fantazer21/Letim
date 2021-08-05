@@ -8,40 +8,107 @@ type UsersPropsType = {
     usersFollow: (userId: number) => void
     usersUnFollow: (userId: number) => void
     setUsers: (users: Array<UserType>) => void
+    totalUsersCount: number,
+    pageSize: number,
+    currentPage: number
+    setCurrentPage: (page: number) => void
+
 }
 
-export const Users = (props: UsersPropsType) => {
-    let getUsers = () => {
-        if (props.users.length === 0) {
-            axios.get<{ items: Array<UserType> }>('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-                props.setUsers(response.data.items)
-            })
+export class Users extends React.Component<UsersPropsType> {
+
+    componentDidMount() {
+        axios.get<{ items: Array<UserType> }>
+        (`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`).then(response => {
+            this.props.setUsers(response.data.items)
+        })
+    }
+
+    //  getUsers = () => {
+    //     if (this.props.users.length === 0) {
+    //         axios.get<{ items: Array<UserType> }>('https://social-network.samuraijs.com/api/1.0/users').then(response => {
+    //             this.props.setUsers(response.data.items)
+    //         })
+    //     }
+    // }
+    onPageChanged = (pageNumber: number) => {
+        this.props.setCurrentPage(pageNumber)
+        axios.get<{ items: Array<UserType> }>
+        (`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${pageNumber}`).then(response => {
+            this.props.setUsers(response.data.items)
+        })
+    }
+
+    render() {
+        let pagesCount = Math.ceil(this.props.totalUsersCount / this.props.pageSize)
+
+        let pages = []
+
+        for (let i = 1; i <= pagesCount; i++) {
+            pages.push(i)
         }
+
+        return (
+            <div>
+                <div>
+                    {pages.map(p => {
+                     return  <span className={this.props.currentPage === p ? s.selectedPage : ''}
+                     onClick={(e) => {return this.onPageChanged(p)}}> {p} </span> })}
+                </div>
+                {
+                    this.props.users.map((el, ind) => {
+                        return <div className={s.Users}>
+                            <PhotoButton key={ind + 10} id={el.id} followed={el.followed}
+                                         usersFollow={this.props.usersFollow}
+                                         usersUnFollow={this.props.usersUnFollow}/>
+                            <UsersArea id={el.id}
+                                       key={ind + 100}
+                                       name={el.name}
+                                       message={el.message}
+                                       country={el.country}
+                                       city={el.city}
+                            />
+                        </div>
+                    })
+                }
+            </div>
+        )
     }
 
 
-    let usersMap = props.users.map((el, ind) => {
-            return <div className={s.Users}>
-                <PhotoButton key={ind + 10} id={el.id} followed={el.followed} usersFollow={props.usersFollow}
-                             usersUnFollow={props.usersUnFollow}/>
-                <UsersArea id={el.id}
-                           key={ind + 100}
-                           name={el.name}
-                           message={el.message}
-                           country={el.country}
-                           city={el.city}
-                /></div>
-        }
-    )
-    return (
-
-        <div>
-            <button onClick={getUsers}>Get users</button>
-            {usersMap}
-        </div>
-    )
-
 }
+
+//Functional Component
+// export const Users = (props: UsersPropsType) => {
+//     let getUsers = () => {
+//         if (props.users.length === 0) {
+//             axios.get<{ items: Array<UserType> }>('https://social-network.samuraijs.com/api/1.0/users').then(response => {
+//                 props.setUsers(response.data.items)
+//             })
+//         }
+//     }
+//
+//
+//     let usersMap = props.users.map((el, ind) => {
+//             return <div className={s.Users}>
+//                 <PhotoButton key={ind + 10} id={el.id} followed={el.followed} usersFollow={props.usersFollow}
+//                              usersUnFollow={props.usersUnFollow}/>
+//                 <UsersArea id={el.id}
+//                            key={ind + 100}
+//                            name={el.name}
+//                            message={el.message}
+//                            country={el.country}
+//                            city={el.city}
+//                 /></div>
+//         }
+//     )
+//     return (
+//         <div>
+//             <button onClick={getUsers}>Get users</button>
+//             {usersMap}
+//         </div>
+//     )
+// }
 
 type PhotoButtonType = {
     id: number

@@ -57,3 +57,6 @@
 .UsersInfoCountry {
     font-size: 15px;
 }
+.selectedPage {
+    font-weight: bold;
+}

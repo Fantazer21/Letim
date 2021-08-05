@@ -1,5 +1,10 @@
+import {contentType} from "../types";
+
 export type UsersStateType = {
     users: Array<UserType>
+    pageSize: number,
+    totalUsersCount: number,
+    currentPage: number
 }
 
 
@@ -15,38 +20,10 @@ export type UserType = {
 
 
 let initialState: UsersStateType = {
-    users: [
-        // {
-        //     id: 1,
-        //     photo: photoVar,
-        //     // button: "unsubscribe",
-        //     followed: false,
-        //     name: "Ilya",
-        //     message: "I am a boss",
-        //     country: "Russia",
-        //     city: 'Moscow'
-        // },
-        // {
-        //     id: 2,
-        //     photo: photoVar,
-        //     // button: 'unsubscribe',
-        //     followed: false,
-        //     name: "Sasha",
-        //     message: "I am a boss too",
-        //     country: "Belarus",
-        //     city: 'Minsk'
-        // },
-        // {
-        //     id: 3,
-        //     photo: photoVar,
-        //     // button: 'unsubscribe',
-        //     followed: false,
-        //     name: "Miki",
-        //     message: "I am best of the best...",
-        //     country: "Hungary",
-        //     city: 'Budapest'
-        // }
-    ]
+    users: [],
+    pageSize: 5,
+    totalUsersCount: 20,
+    currentPage: 1
 }
 
 
@@ -67,16 +44,18 @@ export const userReducer = (state = initialState, action: UsersActionsType): Use
         case 'SetUsers':
             let copy3 = {
                 ...state,
-                users: [...state.users, ...action.users]
+                users: [...action.users]
             }
             return copy3
+        case 'SetCurrentPage' :
+            return {...state, currentPage: action.currentPage}
         default:
             return state
 
     }
 }
 
-export type UsersActionsType = UsersFollowACType | UsersUnFollowACType | setUsersAC
+export type UsersActionsType = UsersFollowACType | UsersUnFollowACType | setUsersAC | SetCurrentPageACType
 
 export const usersFollowAC = (userId: number) => ({type: "UsersFollow", userId} as const)
 type UsersFollowACType = ReturnType<typeof usersFollowAC>
@@ -86,3 +65,6 @@ type UsersUnFollowACType = ReturnType<typeof usersUnFollowAC>
 
 export const setUsersAC = (users: Array<UserType>) => ({type: "SetUsers", users} as const)
 type setUsersAC = ReturnType<typeof setUsersAC>
+
+export const SetCurrentPageAC = (currentPage: number) => ({type: 'SetCurrentPage', currentPage} as const)
+type SetCurrentPageACType = ReturnType<typeof SetCurrentPageAC>
