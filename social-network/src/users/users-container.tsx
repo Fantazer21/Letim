@@ -1,7 +1,14 @@
 import {connect} from "react-redux";
 import {Users} from "./users";
 import {AppDispatchType, AppStateType} from "../redux/redux-store";
-import {SetCurrentPageAC, setUsersAC, usersFollowAC, usersUnFollowAC, UserType} from "../redux/users-reducer";
+import {
+    SetCurrentPageAC,
+    SetTotalUsersCountAC,
+    setUsersAC,
+    usersFollowAC,
+    usersUnFollowAC,
+    UserType
+} from "../redux/users-reducer";
 import axios from "axios";
 import {stat} from "fs";
 
@@ -28,6 +35,9 @@ let mapDispatchToProps = (dispatch: AppDispatchType) => {
         },
         setCurrentPage: (currentPage: number) => {
             dispatch(SetCurrentPageAC(currentPage))
+        },
+        setTotalUsersCount: (totalCount: number) => {
+            dispatch(SetTotalUsersCountAC(totalCount))
         }
     }
 }

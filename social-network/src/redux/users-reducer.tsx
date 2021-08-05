@@ -4,7 +4,7 @@ export type UsersStateType = {
     users: Array<UserType>
     pageSize: number,
     totalUsersCount: number,
-    currentPage: number
+    currentPage: number,
 }
 
 
@@ -23,7 +23,7 @@ let initialState: UsersStateType = {
     users: [],
     pageSize: 5,
     totalUsersCount: 20,
-    currentPage: 1
+    currentPage: 1,
 }
 
 
@@ -49,13 +49,15 @@ export const userReducer = (state = initialState, action: UsersActionsType): Use
             return copy3
         case 'SetCurrentPage' :
             return {...state, currentPage: action.currentPage}
+        case 'SetTotalUsersCount':
+            return {...state, totalUsersCount: action.totalUsersCount}
         default:
             return state
 
     }
 }
 
-export type UsersActionsType = UsersFollowACType | UsersUnFollowACType | setUsersAC | SetCurrentPageACType
+export type UsersActionsType = UsersFollowACType | UsersUnFollowACType | setUsersAC | SetCurrentPageACType | SetTotalUsersCountACType
 
 export const usersFollowAC = (userId: number) => ({type: "UsersFollow", userId} as const)
 type UsersFollowACType = ReturnType<typeof usersFollowAC>
@@ -68,3 +70,6 @@ type setUsersAC = ReturnType<typeof setUsersAC>
 
 export const SetCurrentPageAC = (currentPage: number) => ({type: 'SetCurrentPage', currentPage} as const)
 type SetCurrentPageACType = ReturnType<typeof SetCurrentPageAC>
+
+export const SetTotalUsersCountAC = (totalUsersCount : number) => ( {type: 'SetTotalUsersCount', totalUsersCount} as const)
+type SetTotalUsersCountACType = ReturnType<typeof SetTotalUsersCountAC>
