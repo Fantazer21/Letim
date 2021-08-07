@@ -18,7 +18,7 @@ type UsersPropsType = {
 export class Users extends React.Component<UsersPropsType> {
 
     componentDidMount() {
-        axios.get<{ items: Array<UserType> }>
+        axios.get<{ items: Array<UserType>, totalCount: number  }>
         (`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
             .then(response => {
             this.props.setUsers(response.data.items);
@@ -26,13 +26,6 @@ export class Users extends React.Component<UsersPropsType> {
         })
     }
 
-    //  getUsers = () => {
-    //     if (this.props.users.length === 0) {
-    //         axios.get<{ items: Array<UserType> }>('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-    //             this.props.setUsers(response.data.items)
-    //         })
-    //     }
-    // }
     onPageChanged = (pageNumber: number) => {
         this.props.setCurrentPage(pageNumber)
         axios.get<{ items: Array<UserType> }>

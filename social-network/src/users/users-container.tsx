@@ -9,8 +9,7 @@ import {
     usersUnFollowAC,
     UserType
 } from "../redux/users-reducer";
-import axios from "axios";
-import {stat} from "fs";
+
 
 
 let mapStateToProps = (state: AppStateType) => {
