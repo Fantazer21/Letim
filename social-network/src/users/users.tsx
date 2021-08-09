@@ -73,38 +73,6 @@ export class Users extends React.Component<UsersPropsType> {
 
 }
 
-//Functional Component
-// export const Users = (props: UsersPropsType) => {
-//     let getUsers = () => {
-//         if (props.users.length === 0) {
-//             axios.get<{ items: Array<UserType> }>('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-//                 props.setUsers(response.data.items)
-//             })
-//         }
-//     }
-//
-//
-//     let usersMap = props.users.map((el, ind) => {
-//             return <div className={s.Users}>
-//                 <PhotoButton key={ind + 10} id={el.id} followed={el.followed} usersFollow={props.usersFollow}
-//                              usersUnFollow={props.usersUnFollow}/>
-//                 <UsersArea id={el.id}
-//                            key={ind + 100}
-//                            name={el.name}
-//                            message={el.message}
-//                            country={el.country}
-//                            city={el.city}
-//                 /></div>
-//         }
-//     )
-//     return (
-//         <div>
-//             <button onClick={getUsers}>Get users</button>
-//             {usersMap}
-//         </div>
-//     )
-// }
-
 type PhotoButtonType = {
     id: number
     followed: boolean

@@ -4,8 +4,6 @@
     <list default="true" id="3b2d2a38-b028-4e9c-970c-7b36c82c7020" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/users-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +70,8 @@
       <workItem from="1628081007252" duration="1758000" />
       <workItem from="1628146690830" duration="13020000" />
       <workItem from="1628232663501" duration="4404000" />
+      <workItem from="1628360430640" duration="102000" />
+      <workItem from="1628477238681" duration="1191000" />
     </task>
     <servers />
   </component>
