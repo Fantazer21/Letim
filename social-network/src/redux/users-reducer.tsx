@@ -5,6 +5,7 @@ export type UsersStateType = {
     pageSize: number,
     totalUsersCount: number,
     currentPage: number,
+    isFetching: boolean
 }
 
 
@@ -16,6 +17,7 @@ export type UserType = {
     message: string
     country: string
     city: string
+
 }
 
 
@@ -24,6 +26,7 @@ let initialState: UsersStateType = {
     pageSize: 5,
     totalUsersCount: 20,
     currentPage: 1,
+    isFetching: true
 }
 
 
@@ -51,13 +54,15 @@ export const userReducer = (state = initialState, action: UsersActionsType): Use
             return {...state, currentPage: action.currentPage}
         case 'SetTotalUsersCount':
             return {...state, totalUsersCount: action.totalUsersCount}
+        case 'SetPreloader':
+            return {...state}
         default:
             return state
 
     }
 }
 
-export type UsersActionsType = UsersFollowACType | UsersUnFollowACType | setUsersAC | SetCurrentPageACType | SetTotalUsersCountACType
+export type UsersActionsType = UsersFollowACType | UsersUnFollowACType | SetUsersAC | SetCurrentPageACType | SetTotalUsersCountACType | SetPreloaderACType
 
 export const usersFollowAC = (userId: number) => ({type: "UsersFollow", userId} as const)
 type UsersFollowACType = ReturnType<typeof usersFollowAC>
@@ -66,10 +71,13 @@ export const usersUnFollowAC = (userId: number) => ({type: "UsersUnFollow", user
 type UsersUnFollowACType = ReturnType<typeof usersUnFollowAC>
 
 export const setUsersAC = (users: Array<UserType>) => ({type: "SetUsers", users} as const)
-type setUsersAC = ReturnType<typeof setUsersAC>
+type SetUsersAC = ReturnType<typeof setUsersAC>
 
 export const SetCurrentPageAC = (currentPage: number) => ({type: 'SetCurrentPage', currentPage} as const)
 type SetCurrentPageACType = ReturnType<typeof SetCurrentPageAC>
 
 export const SetTotalUsersCountAC = (totalUsersCount : number) => ( {type: 'SetTotalUsersCount', totalUsersCount} as const)
 type SetTotalUsersCountACType = ReturnType<typeof SetTotalUsersCountAC>
+
+export const SetPreloaderAC = (users: Array<UserType>) => ( {type: 'SetPreloader'} as const)
+type SetPreloaderACType = ReturnType<typeof SetPreloaderAC>

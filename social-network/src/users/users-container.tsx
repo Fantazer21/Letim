@@ -1,7 +1,7 @@
 import {connect} from "react-redux";
 import {AppDispatchType, AppStateType} from "../redux/redux-store";
 import {
-    SetCurrentPageAC,
+    SetCurrentPageAC, SetPreloaderAC,
     SetTotalUsersCountAC,
     setUsersAC,
     usersFollowAC,
@@ -19,7 +19,8 @@ let mapStateToProps = (state: AppStateType) => {
         users: state.userPage.users,
         pageSize: state.userPage.pageSize,
         totalUsersCount: state.userPage.totalUsersCount,
-        currentPage: state.userPage.currentPage
+        currentPage: state.userPage.currentPage,
+        isFetching: state.userPage.isFetching
     }
 }
 
@@ -39,6 +40,9 @@ let mapDispatchToProps = (dispatch: AppDispatchType) => {
         },
         setTotalUsersCount: (totalCount: number) => {
             dispatch(SetTotalUsersCountAC(totalCount))
+        },
+        setPreloader: (users: Array<UserType>) => {
+            dispatch(SetPreloaderAC(users))
         }
     }
 }
@@ -53,6 +57,7 @@ type UsersPropsType = {
     currentPage: number
     setCurrentPage: (page: number) => void
     setTotalUsersCount: (totalCount: number) => void
+    isFetching: boolean
 }
 
 class UsersApi extends React.Component<UsersPropsType> {
@@ -75,7 +80,10 @@ class UsersApi extends React.Component<UsersPropsType> {
     }
 
     render()  {
-        return <Users
+
+        return <>
+            {this.props.isFetching === true ? <img src='https://i.pinimg.com/originals/ae/d1/1d/aed11d6975231b91c8e992c02b8376da.gif'/> : null }
+            <Users
             totalUsersCount={this.props.totalUsersCount }
             pageSize={ this.props.pageSize}
             currentPage={this.props.currentPage}
@@ -84,9 +92,8 @@ class UsersApi extends React.Component<UsersPropsType> {
             usersFollow={this.props.usersFollow}
             usersUnFollow={this.props.usersUnFollow}
         />
+        </>
     }
-
-
 
 }
 
