@@ -55,7 +55,7 @@ export const userReducer = (state = initialState, action: UsersActionsType): Use
         case 'SetTotalUsersCount':
             return {...state, totalUsersCount: action.totalUsersCount}
         case 'SetPreloader':
-            return {...state}
+            return {...state, isFetching: action.toggle }
         default:
             return state
 
@@ -64,20 +64,20 @@ export const userReducer = (state = initialState, action: UsersActionsType): Use
 
 export type UsersActionsType = UsersFollowACType | UsersUnFollowACType | SetUsersAC | SetCurrentPageACType | SetTotalUsersCountACType | SetPreloaderACType
 
-export const usersFollowAC = (userId: number) => ({type: "UsersFollow", userId} as const)
-type UsersFollowACType = ReturnType<typeof usersFollowAC>
+export const usersFollow = (userId: number) => ({type: "UsersFollow", userId} as const)
+type UsersFollowACType = ReturnType<typeof usersFollow>
 
-export const usersUnFollowAC = (userId: number) => ({type: "UsersUnFollow", userId} as const)
-type UsersUnFollowACType = ReturnType<typeof usersUnFollowAC>
+export const usersUnFollow= (userId: number) => ({type: "UsersUnFollow", userId} as const)
+type UsersUnFollowACType = ReturnType<typeof usersUnFollow>
 
-export const setUsersAC = (users: Array<UserType>) => ({type: "SetUsers", users} as const)
-type SetUsersAC = ReturnType<typeof setUsersAC>
+export const setUsers = (users: Array<UserType>) => ({type: "SetUsers", users} as const)
+type SetUsersAC = ReturnType<typeof setUsers>
 
-export const SetCurrentPageAC = (currentPage: number) => ({type: 'SetCurrentPage', currentPage} as const)
-type SetCurrentPageACType = ReturnType<typeof SetCurrentPageAC>
+export const setCurrentPage = (currentPage: number) => ({type: 'SetCurrentPage', currentPage} as const)
+type SetCurrentPageACType = ReturnType<typeof setCurrentPage>
 
-export const SetTotalUsersCountAC = (totalUsersCount : number) => ( {type: 'SetTotalUsersCount', totalUsersCount} as const)
-type SetTotalUsersCountACType = ReturnType<typeof SetTotalUsersCountAC>
+export const setTotalUsersCount = (totalUsersCount : number) => ( {type: 'SetTotalUsersCount', totalUsersCount} as const)
+type SetTotalUsersCountACType = ReturnType<typeof setTotalUsersCount>
 
-export const SetPreloaderAC = (users: Array<UserType>) => ( {type: 'SetPreloader'} as const)
-type SetPreloaderACType = ReturnType<typeof SetPreloaderAC>
+export const setPreloader = (toggle: boolean) => ( {type: 'SetPreloader', toggle} as const)
+type SetPreloaderACType = ReturnType<typeof setPreloader>
