@@ -1,25 +1,40 @@
 import React from 'react';
 import {Story, Meta} from '@storybook/react';
 import {action} from "@storybook/addon-actions";
-import { AddItemForm } from '../AddItemForm';
+import {AddItemForm} from '../AddItemForm';
+import {Task} from "../Task";
 
 type AddItemFormPropsType = {
     addItem: (title: string) => void
 }
 
 export default {
-    title: 'TodoLists/AddItemForm',
-    component: AddItemForm,
-    argTypes: {
-        onClick: {
-            description: 'Button clicked inside component'
-        }
-    },
+    title: 'Task Component',
+    component: Task,
 } as Meta;
 
-const Template: Story<AddItemFormPropsType> = (args) => <AddItemForm {...args} />;
+const changeTaskStatusCallback = action('Status Changed')
 
-export const AddItemFormExample = Template.bind({});
-AddItemFormExample.args = {
-    addItem: action('Button clicked inside component')
-};
+const changeTaskTitle = action('Title Changed')
+
+const removeTask = action('Task removed')
+
+
+
+
+export const AddItemFormBaseExample = (props: any) => {
+    return <>
+        <Task task={{id: '1',title: "Test title",isDone: true}}
+              changeTaskStatus={changeTaskStatusCallback}
+              changeTaskTitle={changeTaskTitle}
+              removeTask={removeTask}
+              todolistId={'Td1'}/>
+        <Task task={{id: '2',title: "Test title2",isDone: true}}
+              changeTaskStatus={changeTaskStatusCallback}
+              changeTaskTitle={changeTaskTitle}
+              removeTask={removeTask}
+              todolistId={'Td2'}/>
+    </>
+
+
+}
