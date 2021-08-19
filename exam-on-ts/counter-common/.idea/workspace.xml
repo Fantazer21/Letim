@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35da1da4-ef4b-4f9e-9e92-934ace132593" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/state/tasks-reducer.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/state/todolists-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-10/src/state/todolists-reducer.test.tsx" afterDir="false" />
+    <list default="true" id="03d16937-b4f8-4a01-8ce5-a37fc5b15282" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../../Fantazer21" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/exam-on-ts.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../counter-redux/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../counter-redux/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../it-incubator-todolist-ts-13/src/api/todolist-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../it-incubator-todolist-ts-13/src/api/todolist-api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +17,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1tFegseKMfc99X5ry0SFmn0cUSr" />
+  <component name="ProjectId" id="1wwGBemJJ6eR8QswRu9iG9Rzc5U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,21 +29,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../counter-redux" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Letim\exam-on-ts\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Letim\exam-on-ts\src\counterWithLS" />
-      <recent name="C:\Letim\exam-on-ts" />
-    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -59,15 +52,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="35da1da4-ef4b-4f9e-9e92-934ace132593" name="Default Changelist" comment="" />
-      <created>1622369379335</created>
+      <changelist id="03d16937-b4f8-4a01-8ce5-a37fc5b15282" name="Changes" comment="" />
+      <created>1629362102870</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1622369379335</updated>
-      <workItem from="1622369381655" duration="4073000" />
-      <workItem from="1622373497431" duration="7650000" />
-      <workItem from="1622514785121" duration="6335000" />
-      <workItem from="1622714002705" duration="4032000" />
+      <updated>1629362102870</updated>
+      <workItem from="1629362104233" duration="78000" />
+      <workItem from="1629362184411" duration="1052000" />
     </task>
     <servers />
   </component>
@@ -84,6 +75,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

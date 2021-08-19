@@ -5,17 +5,15 @@ import {decCreatorAC, incCreatorAC} from "./reducers/counterReducers";
 import {AppStateType} from "./reducers/store";
 
 
+
 function App() {
-    let res = useSelector<any, any>(state => state.counter)
+    let res = useSelector<AppStateType, number>(state => state.counter.startValue)
 
     let dispatch = useDispatch()
 
     const inc = () => {
         dispatch(incCreatorAC())
     }
-
-
-
     
     const dec = () => {
         dispatch(decCreatorAC())

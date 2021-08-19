@@ -1,5 +1,5 @@
-const initialState = {
-    counter: 220
+let initialState = {
+    startValue: 220
 }
 
 type InitialStateType = typeof initialState
@@ -7,9 +7,9 @@ type InitialStateType = typeof initialState
 export const counterReducers = (state: InitialStateType = initialState, action: any) => {
     switch (action.type) {
         case 'INC':
-            return {...state, counter: state.counter + 1}
+            return {...state, startValue: state.startValue + 1}
         case 'DEC':
-            return {...state, counter: state.counter - 1}
+            return {...state, startValue: state.startValue - 1}
         default:
             return state
     }
@@ -17,4 +17,4 @@ export const counterReducers = (state: InitialStateType = initialState, action: 
 
 export const incCreatorAC = () => ({type: 'INC'} as const)
 
-export const decCreatorAC = () => ({type: 'INC'} as const)
+export const decCreatorAC = () => ({type: 'DEC'} as const)

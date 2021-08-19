@@ -35,8 +35,6 @@ type DeleteToDoListType  = {
 
 
 
-
-
 export const todolistAPI = {
     updateTodolist(todolistId: string, title: string) {
         const promise = instance.put(`todo-lists/${todolistId}`, {title: title})
