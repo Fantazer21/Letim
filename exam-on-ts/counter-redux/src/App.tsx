@@ -1,30 +1,30 @@
 import React from 'react';
 import './App.css';
 import {useDispatch, useSelector} from "react-redux";
-import {decCreatorAC, incCreatorAC} from "./reducers/counterReducers";
+import {decAC, incAC} from "./reducers/counterReducers";
 import {AppStateType} from "./reducers/store";
 
 
-
-function App() {
+export function App() {
     let res = useSelector<AppStateType, number>(state => state.counter.startValue)
 
     let dispatch = useDispatch()
 
     const inc = () => {
-        dispatch(incCreatorAC())
+        dispatch(incAC())
     }
-    
+
     const dec = () => {
-        dispatch(decCreatorAC())
+        dispatch(decAC())
     }
     return (
         <div className="App">
             <div>{res}</div>
-            <button onClick={inc}>increment</button>
-            <button onClick={dec}>decrement</button>
+            <button onClick={inc}>PLUS</button>
+            <button onClick={dec}>MINUS</button>
         </div>
     );
 }
 
-export default App;
+
+
