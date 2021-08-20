@@ -5,7 +5,7 @@ import {Button, IconButton} from '@material-ui/core'
 import {Delete} from '@material-ui/icons'
 import {Task} from './Task'
 import {TaskStatuses, TaskType} from './api/todolists-api'
-import {FilterValuesType} from './state/todolists-reducer'
+import {FilterValuesType} from './state/to-do-lists-reducer'
 
 type PropsType = {
     id: string
