@@ -7,12 +7,12 @@ import {Menu} from '@material-ui/icons';
 import {
     addTodolistAC,
     changeTodolistFilterAC,
-    changeTodolistTitleAC,
+    changeTodolistTitleAC, fetchTodolistsTC,
     FilterValuesType,
     removeTodolistAC, setToDoListsAC,
     TodolistDomainType
 } from './state/to-do-lists-reducer'
-import {addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC} from './state/tasks-reducer';
+import {addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC, setTasksAC} from './state/tasks-reducer';
 import {useDispatch, useSelector} from 'react-redux';
 import {AppRootStateType} from './state/store';
 import {TaskStatuses, TaskType, todolistsAPI} from './api/todolists-api'
@@ -30,16 +30,15 @@ function App() {
     const dispatch = useDispatch();
 
     useEffect( () => {
-        todolistsAPI.getTodolists()
-            .then(res=> {
-                const action = setToDoListsAC(res.data)
-                dispatch(action)
-            })
-    })
+        dispatch(fetchTodolistsTC())
+    }, [])
 
     const removeTask = useCallback(function (id: string, todolistId: string) {
-        const action = removeTaskAC(id, todolistId);
-        dispatch(action);
+        todolistsAPI.deleteTask(todolistId, id)
+            .then((res) => {
+                const action = removeTask(id, todolistId)
+                dispatch(action)
+            })
     }, []);
 
     const addTask = useCallback(function (title: string, todolistId: string) {
