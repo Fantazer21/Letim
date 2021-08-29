@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c0c429-5a7d-489b-bb2c-b45b5f95bea9" name="Changes" comment="">
+    <list default="true" id="fcade550-d543-4886-ab65-33928c02a5f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1xGo9RiWduAZ5ZRIOD33X4dqFyz" />
+  <component name="ProjectId" id="1xOqU1g0OCpju0WHGaPQdjRSPEu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,11 +33,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Letim\it-incubator-todolist-ts-14\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -56,13 +56,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d2c0c429-5a7d-489b-bb2c-b45b5f95bea9" name="Changes" comment="" />
-      <created>1629990635334</created>
+      <changelist id="fcade550-d543-4886-ab65-33928c02a5f5" name="Changes" comment="" />
+      <created>1630236495393</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1629990635334</updated>
-      <workItem from="1629990638800" duration="10179000" />
-      <workItem from="1630236379797" duration="112000" />
+      <updated>1630236495393</updated>
+      <workItem from="1630236498135" duration="1456000" />
     </task>
     <servers />
   </component>
@@ -79,6 +78,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
