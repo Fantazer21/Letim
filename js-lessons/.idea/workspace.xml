@@ -3,17 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fcade550-d543-4886-ab65-33928c02a5f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/Todolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/tasks-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/todolists-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/CurrencyExchangeContainer/CurrencyEContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CurrencyExchangeContainer/CurrencyEContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons/lesson1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons/lesson1/lesson1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson1/lesson1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/currencyReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/currencyReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +31,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Letim\js-lessons\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -61,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630236495393</updated>
-      <workItem from="1630236498135" duration="1456000" />
+      <workItem from="1630236498135" duration="7715000" />
     </task>
     <servers />
   </component>
