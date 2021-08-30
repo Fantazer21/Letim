@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcade550-d543-4886-ab65-33928c02a5f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/CurrencyExchangeContainer/CurrencyEContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CurrencyExchangeContainer/CurrencyEContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons/lesson1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson1/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons/lesson1/lesson1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson1/lesson1.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/currencyReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/currencyReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons/lesson2/lesson2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson2/lesson2.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +27,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="C:\Letim\js-lessons\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Letim\js-lessons\src\redux" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -57,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630236495393</updated>
-      <workItem from="1630236498135" duration="7715000" />
+      <workItem from="1630236498135" duration="7835000" />
+      <workItem from="1630294894156" duration="7652000" />
     </task>
     <servers />
   </component>
@@ -74,5 +79,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

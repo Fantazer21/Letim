@@ -24,6 +24,13 @@ console.log('lesson 2');
 // Task 01
 // Реализовать функцию sum которая суммирует 2 числа следующим образом sum(3)(6) === 9
 
+// const sum = (x: number) => {
+//      return function child (y: number) {
+//         return y+ x
+//     }
+// }
+// console.log(sum(3)(6))
+
 // Task 02
 // Реализовать функцию makeCounter которая работает следующим образом:
 // const counter = makeCounter();
@@ -33,8 +40,20 @@ console.log('lesson 2');
 // counter2(); // 1
 // counter(); // 3
 
+// const counter = makeCounter()
+//
+// function makeCounter() {
+//     let result = 0
+//     return function() {
+//         return result + 1
+//     }
+// }
+
+
+
 // Task 03
-// Переписать функцию из Task 02 так, что бы она принимала число в качестве аргумента и это число было стартовым значением счетчика
+// Переписать функцию из Task 02 так,
+// что бы она принимала число в качестве аргумента и это число было стартовым значением счетчика
 // и возвращала следующий объект методов:
 // increase: +1
 // decrease: -1
@@ -55,6 +74,14 @@ console.log('lesson 2');
 
 // Task 05
 // решить все задачи по рекурсии которые даны в конце статьи https://learn.javascript.ru/recursion
+
+// function recursion (x)  {
+//     let sum = 0
+//
+//     if( x = 1) return 1
+//     return sum + recursion(x -1)
+// }
+// recursion(100)
 
 // Task 06
 // написать функцию, которая повторяет функционал метода flat массива на всю глубину.

@@ -1,6 +1,6 @@
 import React from 'react';
 import CurrencyExchange from '../../components/CurrencyExchange/CurrencyExchange';
-import { CurrencyState, CurrencyType } from '../../redux/currencyReducer';
+import { CurrencyType } from '../../redux/currencyReducer';
 
 import {
     ChangeActionAC,
@@ -8,9 +8,10 @@ import {
     СhangeCurrentCurrencyAC,
     CurrencyReducersTypes
 } from '../../redux/actions';
-import {connect, ConnectedProps, useDispatch} from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
+import {selectAllCurrencyState} from "../../redux/selectors";
 
-const CurrencyEContainer: React.FC<TProps> = props => {
+export const CurrencyEContainer: React.FC = ()  => {
         const dispatch = useDispatch()
 
     const {
@@ -19,7 +20,7 @@ const CurrencyEContainer: React.FC<TProps> = props => {
         isBuying,
         amountOfBYN,
         amountOfCurrency,
-    } = props;
+    } = useSelector(selectAllCurrencyState);
 
     let currencyRate: number = 0;
     const currenciesName = currencies.map((currency: CurrencyType) => {
@@ -76,29 +77,26 @@ const CurrencyEContainer: React.FC<TProps> = props => {
     );
 };
 
-
-const mapStateToProps = ( { currency } : {currency: CurrencyState} ): CurrencyState => {
-    return {
-        currencies: currency.currencies,
-        currentCurrency: currency.currentCurrency,
-        isBuying: currency.isBuying,
-        amountOfBYN: currency.amountOfBYN,
-        amountOfCurrency: currency.amountOfCurrency,
-    };
-};
-
-
-
-
-
-
-const connector = connect(mapStateToProps, {
-    ChangeCurrencyFieldAC,
-    ChangeActionAC,
-    СhangeCurrentCurrencyAC,
-});
-
-type TProps = ConnectedProps<typeof connector>;
-
-export default connector(CurrencyEContainer);
+//
+// const mapStateToProps = ( { currency } : {currency: CurrencyState} ): CurrencyState => {
+//     return {
+//         currencies: currency.currencies,
+//         currentCurrency: currency.currentCurrency,
+//         isBuying: currency.isBuying,
+//         amountOfBYN: currency.amountOfBYN,
+//         amountOfCurrency: currency.amountOfCurrency,
+//     };
+// };
+//
+//
+//
+// const connector = connect(mapStateToProps, {
+//     ChangeCurrencyFieldAC,
+//     ChangeActionAC,
+//     СhangeCurrentCurrencyAC,
+// });
+//
+// type TProps = ConnectedProps<typeof connector>;
+//
+// export default connector(CurrencyEContainer);
 
