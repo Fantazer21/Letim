@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcade550-d543-4886-ab65-33928c02a5f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/state/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-14/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/CurrencyExchangeContainer/CurrencyEContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CurrencyExchangeContainer/CurrencyEContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons/lesson2/lesson2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson2/lesson2.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1630236495393</updated>
       <workItem from="1630236498135" duration="7835000" />
-      <workItem from="1630294894156" duration="7652000" />
+      <workItem from="1630294894156" duration="8480000" />
+      <workItem from="1630334398383" duration="53000" />
     </task>
     <servers />
   </component>
