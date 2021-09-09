@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcade550-d543-4886-ab65-33928c02a5f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/app/app-reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/components/ErrorSnackBar/ErrorSnackbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/features/TodolistsList/tasks-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/src/features/TodolistsList/todolists-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../it-incubator-todolist-ts-15/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons/lesson3/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson3/API.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons/lesson3/Lesson3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson3/Lesson3.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons/lesson3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons/lesson3/lesson_3.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson3/lesson_3.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lessons/lesson4/Lesson4.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson4/Lesson4.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../it-incubator-todolist-ts-14/src/api/todolists-api.ts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="C:\Letim\js-lessons\node_modules\typescript\lib" />
@@ -70,6 +68,9 @@
       <workItem from="1630294894156" duration="8480000" />
       <workItem from="1630334398383" duration="53000" />
       <workItem from="1630751545044" duration="2314000" />
+      <workItem from="1630854377139" duration="1262000" />
+      <workItem from="1630896846123" duration="7459000" />
+      <workItem from="1631022526606" duration="17544000" />
     </task>
     <servers />
   </component>
