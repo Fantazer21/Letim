@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fcade550-d543-4886-ab65-33928c02a5f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Fantazer21" beforeDir="false" afterPath="$PROJECT_DIR$/../Fantazer21" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons/lesson3/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson3/API.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons/lesson3/Lesson3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson3/Lesson3.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons/lesson3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson3/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons/lesson3/lesson_3.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson3/lesson_3.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lessons/lesson4/Lesson4.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lessons/lesson4/Lesson4.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +63,7 @@
       <workItem from="1630751545044" duration="2314000" />
       <workItem from="1630854377139" duration="1262000" />
       <workItem from="1630896846123" duration="7459000" />
-      <workItem from="1631022526606" duration="17544000" />
+      <workItem from="1631022526606" duration="18939000" />
     </task>
     <servers />
   </component>
