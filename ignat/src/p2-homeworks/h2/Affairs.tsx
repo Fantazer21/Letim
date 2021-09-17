@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {Dispatch, SetStateAction} from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
+import s from './Affairs.module.css'
 
 type AffairsPropsType = { // need to fix any
-    data: AffairType[]
-    // @ts-ignore
-    setFilter: (filter: FilterType) => void
-    deleteAffairCallback: (_id: number) => void
-    // filter: FilterType
+    data: AffairType[],
+    setFilter: Dispatch<SetStateAction<FilterType>>,
+    deleteAffairCallback: (_id: number) => void,
+    filter: FilterType,
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -37,10 +37,10 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
+            <button onClick={setAll} className={s.filterBtn}>All</button>
+            <button onClick={setHigh} className={s.filterBtn}>High</button>
+            <button onClick={setMiddle} className={s.filterBtn}>Middle</button>
+            <button onClick={setLow} className={s.filterBtn}>Low</button>
         </div>
     )
 }
